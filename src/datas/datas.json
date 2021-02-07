@@ -1,0 +1,2342 @@
+{
+  "races": [
+    {
+      "nom": "Humain",
+      "description": "L'humain est la créature la plus répandue à Dùralas, de taille moyenne, de poids moyen, on dit que leur roi réside à Stellaraë, la capitale humaine.",
+      "vitalite": 100,
+      "vitesse": 100,
+      "degats": 25,
+      "des": {
+        "eC": 3,
+        "cR": 6,
+        "cC": 1,
+        "pourcentageDegatsCC": 0.5
+      }
+    },
+    {
+      "nom": "Abyssal",
+      "description": "L'abyssal se décompose en trois branches. Celle de la Muse, celle des neutres, et celle de la Tempête. Les abyssaux de la Muse ont une apparence humaine, hormis leurs yeux noirs, et quelques caractéristiques aquatiques. Les abyssaux de la Tempête ont une apparence démoniaque et sont souvent associés à des démons marins. Quant aux abyssaux neutres, ils oscillent entre les deux : ils sont bleutés, possèdent des écailles, voire des nageoires, mais ils n'ont pas l'aspect démoniaque. Ils sont l'entre-deux, et les abyssaux neutres sont soit de la branche de la Muse, soit de la branche de la Tempête. Néanmoins, les trois types ont les mêmes caractéristiques : ils possèdent des branchies et des poumons, vivent dans les abysses, adorent la musique, et arrivent à contrôler des créatures par la pensée.",
+      "vitalite": 65,
+      "vitesse": 110,
+      "degats": 10,
+      "des": {
+        "eC": 1,
+        "cR": 8,
+        "cC": 1,
+        "multiplicateurDegatsCC": 0.25
+      },
+      "special": "Peuvent invoquer un monstre pioché dans le bestiaire de la zone où ils sont en train de RP si leur vitesse est 2x supérieur au monstre invoqué. Ils invoquent le monstre le plus fort qu'ils puissent invoquer MAIS ils ne peuvent invoquer ni les Humanoïdes, ni les Abominations, ni les créatures ayant plus de 1000 de vitalité."
+    },
+    {
+      "nom": "Djöllfulin",
+      "description": "Vulgairement appelés “Démons nordiques”, les Djöllfulins font partie d’un des derniers peuples à avoir foulé les terres dùralassiennes, arrivant par la banquise. De la hauteur d’un humain, ils sont longilignes et ont une peau rougeâtre. Ils possèdent une queue fourchue, certains possèdent des écailles, et deux grandes cornes ornent leurs têtes, la forme différant selon les familles. Malgré leur aspect diabolique, ils sont très pieux et pratiquent le tri-théisme, soit une religion fondée sur trois divinités. C’est cette foi qui les guide.",
+      "vitalite": 75,
+      "vitesse": 110,
+      "degats": 25,
+      "des": {
+        "eC": 3,
+        "cR": 5,
+        "cC": 2,
+        "multiplicateurDegatsCC": 0.25
+      }
+    },
+    {
+      "nom": "Elfe",
+      "description": "L'elfe ressemble physiquement à un humain, bien qu'il soit plus grand, plus svelte, et qu'il ait les oreilles en pointe. Il adore la nature. Il y aurait un ancien village elfique dans les recoins de Sylfaën.",
+      "vitalite": 100,
+      "vitesse": 110,
+      "degats": 30,
+      "des": {
+        "eC": 3,
+        "cR": 5,
+        "cC": 2,
+        "multiplicateurDegatsCC": 0.25
+      }
+    },
+    {
+      "nom": "Hybride",
+      "description": "L'hybride se divise en plusieurs grandes familles qui ont toutes les mêmes caractéristiques : il s'agit d'humanoïdes hybrides avec un buste d'homme, et un corps d'animal, soit bipède, soit quadrupède. Les hybrides sont forcément herbivores, et ont souvent des caractéristiques communes, tels que des sabots. On raconte que cette race a été créée par la Déesse majeure de la nuit Magnésie.",
+      "vitalite": 105,
+      "vitesse": 105,
+      "degats": 20,
+      "des": {
+        "eC": 2,
+        "cR": 7,
+        "cC": 1,
+        "multiplicateurDegatsCC": 0.50
+      }
+    },
+    {
+      "nom": "Géant",
+      "description": "Bien que doté d'une force qui dépasse l’entendement, le géant n'est vraiment pas très intelligent... Méfiez-vous juste de ses coups. Les géants vivent reclus là où personne ne peut aller, soit sur les plus hauts sommets des Baldor, comme le Mont Tagne.",
+      "vitalite": 100,
+      "vitesse": 100,
+      "degats": 25,
+      "des": {
+        "eC": 5,
+        "cR": 3,
+        "cC": 2,
+        "multiplicateurDegatsPetitCC": 0.50,
+        "multiplicateurDegatsGrosCC": 1
+      }
+    },
+    {
+      "nom": "Thérianthrope",
+      "description": "Le loup-garou serait né d'une malédiction lancée à un humain qui tuait des loups, l'en transformant à la pleine lune. On sait maintenant qu'il s'agit d'un virus : la lycanthropie. Depuis, c'est une race à part entière qui se transforme à sa guise, ayant plus ou moins contrôlé ce maléfice (la pleine lune garde un effet puissant sur certains..). Ils se chamaillent constamment avec les vampires dans les cavernes de Spelunca. Quant aux thérianthropes, ils sont basés sur le même principe (virus transmis à l'homme) permettant à l'individu touché de se transformer en animal (et à certains d'être incontrôlables les soirs de pleine lune). Mais toutes les espèces ne sont pas concernées ! Seuls les canidés, les félins, ainsi que les ursidés, sont concernés.",
+      "vitalite": 100,
+      "vitesse": 105,
+      "degats": 30,
+      "des": {
+        "eC": 4,
+        "cR": 5,
+        "cC": 1,
+        "multiplicateurDegatsCC": 0.75
+      }
+    },
+    {
+      "nom": "Naga",
+      "description": "Le naga est une créature mi-homme, mi-serpent. En effet, le naga a un buste et une tête d'homme (quoique parfois reptilienne) mais il possède une queue reptilienne à la place des jambes. Il a la faculté de parler au serpent. Ils ont une autre particularité : ils peuvent, s'ils le souhaitent, avoir des jambes humaines pour une durée allant de 1 à 12 heures, selon les individus. Après, il faut attendre le lendemain (mais la majorité préfèrent ne pas se transformer, parce qu'ils préfèrent leur forme originelle).",
+      "vitalite": 80,
+      "vitesse": 100,
+      "degats": 40,
+      "des": {
+        "eC": 4,
+        "cR": 3,
+        "cC": 3,
+        "multiplicateurDegatsPetitCC": 0.25,
+        "multiplicateurDegatsGrosCC": 0.5
+      }
+    },
+    {
+      "nom": "Nain",
+      "description": "Le nain est un être qui ne dépasse pas les 1 mètre 20 (et encore), et qui est souvent reconnaissable par sa barbe (sauf exception). Il est de nature très chauvine et garde ses secrets enfouis dans les mines des Baldor. Il est réputé pour sa robustesse.",
+      "vitalite": 115,
+      "vitesse": 95,
+      "degats": 20,
+      "des": {
+        "eC": 3,
+        "cR": 6,
+        "cC": 1,
+        "multiplicateurDegatsCC": 0.5
+      }
+    },
+    {
+      "nom": "Peau-verte",
+      "description": "Le terme 'Peau-verte' rassemble la race des orcs ainsi que tous les dérivés, cousins, et transformations de ces nomades du désert de Harena : gobelins, hobgobelins, kùll'urgals, ou encore perracks qui ont résisté à l'emprise du Comte Motch'hollow. En plus de leur odeur, un élément les unit : leur peau verte.",
+      "vitalite": 105,
+      "vitesse": 95,
+      "degats": 25,
+      "des": {
+        "eC": 4,
+        "cR": 5,
+        "cC": 1,
+        "multiplicateurDegatsCC": 0.75
+      }
+    },
+    {
+      "nom": "Stryge Blanc",
+      "description": "Le stryge blanc est un humain qui possède des ailes blanches, ainsi que des yeux bleus ou verts. Ils sont bons par nature, sauf avec les stryges noirs, avec qui ils sont en conflit perpétuel. Tout comme le stryge noir, il ne peut pas s'envoler très haut, ni très longtemps. Cependant, il leur est facile de planer, c'est pourquoi on peut en voir certains s'élancer des monts du Baldor et voleter jusqu'en bas.",
+      "vitalite": 105,
+      "vitesse": 100,
+      "degats": 15,
+      "des": {
+        "eC": 2,
+        "cR": 6,
+        "cC": 2,
+        "multiplicateurDegatsCC": 0.25
+      }
+    },
+    {
+      "nom": "Stryge Noir",
+      "description": "Le stryge noir est un humain possédant des ailes noires, ainsi que des yeux rouges ou violets. Il est naturellement mauvais. A savoir que les stryges ne peuvent planer qu'à une altitude restreinte (à deux mètres du sol environ) et ne peuvent rester dans les airs que cinq minutes, leurs ailes n'étant pas assez puissantes pour rester plus longtemps en l'air. Toutefois, elles font une bonne défense en cas d'attaque. Ils détestent presque tout le monde, avec une mention spéciale pour les stryges blancs.",
+      "vitalite": 105,
+      "vitesse": 100,
+      "degats": 15,
+      "des": {
+        "eC": 2,
+        "cR": 6,
+        "cC": 2,
+        "multiplicateurDegatsCC": 0.25
+      }
+    },
+    {
+      "nom": "Vampire",
+      "description": "Le vampire n'est ni plus, ni moins qu'un mort-vivant avec des capacités accrues, et de longues canines. Un peu comme les loups-garous, ils sont transformés après une morsure, dû à un virus qui s'écoule alors dans leur sang. Leur principal atout est leur vitesse, qui est doublée par rapport à un humain lambda. Ils détestent deux choses : la lumière du jour, et les loups-garous.",
+      "vitalite": 100,
+      "vitesse": 100,
+      "degats": 20,
+      "des": {
+        "eC": 2,
+        "cR": 6,
+        "cC": 2,
+        "multiplicateurDegatsCC": 0.25
+      }
+    }
+  ],
+  "classes": [
+    {
+      "nom": "Barbare",
+      "type": "Aventurière",
+      "bonus": "Si vous prenez cette classe, grâce à votre Aura du Berserker, à chaque fois que vous ferez un Échec Critique en combat, vos dégâts augmenteront de 50% de vos dégâts initiaux. Ce bonus dure alors pendant toute la durée du combat, et il est cumulable à l'infini. De plus, les armes à deux mains ne prennent qu'une place dans votre inventaire.",
+      "stats": {
+        "vitalite": 10,
+        "vitesse": 5,
+        "degats": 30
+      },
+      "slotsArmes": 3,
+      "apparence": "Les barbares sont souvent vus avec des armures légères ou intermédiaires, des poils sur le torse, et avec un énorme marteau ou une énorme hache dans chaque main. Des bourrins, pour résumer.",
+      "conditions": "Les barbares n'ont que deux places dans leur inventaire, mais les armes à deux mains n'y prennent qu'une place. En outre, les barbares ont un potentiel de cinq armes en tout, soit une fusion de 3 armes + une fusion de 2 armes à une main OU une fusion de 3 armes + 1 arme à deux mains."
+    },
+    {
+      "nom": "Guerrier",
+      "type": "Aventurière",
+      "bonus": "Si vous prenez cette classe, vous verrez augmenter à chaque niveau vos dégâts de 45, au lieu de 5",
+      "stats": {
+        "vitalite": 10,
+        "vitesse": 5,
+        "degats": 45
+      },
+      "slotsArmes": 3,
+      "apparence": " Les guerriers ont souvent une armure relativement légère, mais pas mal d'armes, et ils peuvent combattre avec tout type d'armes. Ils ont une certaine attirance pour les épées",
+      "conditions": "/"
+    },
+    {
+      "nom": "Maître d'armes",
+      "type": "Aventurière",
+      "bonus": "Si vous prenez cette classe, vous pourrez avoir dans votre inventaire 5 armes au lieu de 3",
+      "stats": {
+        "vitalite": 15,
+        "vitesse": 10,
+        "degats": 5
+      },
+      "slotsArmes": 5,
+      "apparence": "Les maîtres d'armes sont sur-équipés. Ils ont sur eux un attirail qui en ferait pâlir plus d'un, et ils portent tout type d'arme",
+      "conditions": "/"
+    },
+    {
+      "nom": "Paladin",
+      "type": "Aventurière",
+      "bonus": "Si vous prenez cette classe, vous verrez augmenter à chaque niveau votre vitalité de 45, vos dégâts de 10, et votre vitesse de 5.",
+      "stats": {
+        "vitalite": 45,
+        "vitesse": 5,
+        "degats": 10
+      },
+      "slotsArmes": 3,
+      "apparence": "Les Paladins ont une grosse armure, et sont plutôt dotés d'armes lourdes. Celles-ci les rendent lents, mais leur donnent également une très bonne défense. Ce sont très souvent des chevaliers. De plus, ils sont portés par un sens aigu de l'honneur et la justice",
+      "conditions": "/"
+    },
+    {
+      "nom": "Protecteur",
+      "type": "Aventurière",
+      "bonus": "Si vous prenez cette classe, les dégâts jetés contre vous sont divisés par 2, donc si on vous attaque à 100, vous perdez seulement 50 de vitalité. Seulement il y a quelques petites contraintes. En effet, l'adversaire peut tout de même vous taper 2x, donc vous limitez surtout la casse. On vous conseille les armures lourdes.",
+      "stats": {
+        "vitalite": 15,
+        "vitesse": 5,
+        "degats": 5
+      },
+      "slotsArmes": 2,
+      "apparence": "Pour décrire l'apparence d'un protecteur, c'est relativement simple : vous prenez une énorme armure, un énorme bouclier ou une arme très lourde, telle qu'une hache ou un marteau, et vous avez un protecteur. Évidemment, certains diffèrent un peu de cet archétype, mais c'est un peu à ce que l'on pense en parlant des 'protecteurs'.",
+      "conditions": "Les protecteurs utilisent toutes les armes mais n'ont que deux places dans leur inventaire."
+    }
+  ],
+  "equipements": {
+    "armesBases": [
+      {
+        "Dagues": [
+          {
+            "nom": "Dague émoussée",
+            "degats": 2,
+            "prix": 10,
+            "type": "Normale"
+          },
+          {
+            "nom": "Dague de novice",
+            "degats": 5,
+            "prix": 30,
+            "type": "Normale"
+          },
+          {
+            "nom": "Dague de l'assassin",
+            "degats": 18,
+            "prix": 65,
+            "type": "Normale"
+          },
+          {
+            "nom": "Dague'd'Argnan",
+            "degats": 32,
+            "prix": 100,
+            "type": "Normale"
+          },
+          {
+            "nom": "Dague Camélia",
+            "degats": 64,
+            "prix": 300,
+            "type": "Craft"
+          },
+          {
+            "nom": "Wakizachi",
+            "degats": 78,
+            "type": "Exotique",
+            "special": "La valeur des Coups critiques est augmentée de 25%."
+          },
+          {
+            "nom": "Dague Nεrό",
+            "degats": 86,
+            "vitesse": 10,
+            "type": "Exotique",
+            "special": "Arme immergée : Octroie +10 de dégâts et +60 de vitesse par tour. Fonctionne seulement dans la région 'Mers & Océans'."
+          },
+          {
+            "nom": "Dague émeraude",
+            "degats": 92,
+            "prix": 500,
+            "type": "Normale"
+          },
+          {
+            "nom": "Dague en adamantium",
+            "degats": 100,
+            "vitesse": -10,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Poignard vampirique",
+            "degats": 110,
+            "speciale": "Arme immergée : Octroie +10 de dégâts et +60 de vitesse par tour. Fonctionne seulement dans la région 'Mers & Océans'.",
+            "prix": 600,
+            "type": "Normale"
+          },
+          {
+            "nom": "Dague Bestiale",
+            "degats": 128,
+            "prix": 700,
+            "type": "Craft"
+          },
+          {
+            "nom": "Daguishi",
+            "degats": 146,
+            "type": "Normale"
+          },
+          {
+            "nom": "Pieu",
+            "degats": 150,
+            "type": "Exotique",
+            "special": "Anti-vampires : augmente les dégâts contre les vampires de 20%."
+          },
+          {
+            "nom": "Dague de Taki",
+            "degats": 164,
+            "vitesse": -25,
+            "prix": 1000,
+            "type": "Craft"
+          },
+          {
+            "nom": "Karambiture",
+            "degats": 146,
+            "vitesse": -17,
+            "prix": 1200,
+            "type": "Craft",
+            "special": " Saignement : la cible perd 40 de vitalité/tour (cumulable à chaque Coup Réussi). Mais si le porteur de l'arme fait un Échec critique, il s'inflige ce même saignement (cumulable à chaque Échec critique))"
+          },
+          {
+            "nom": "Le Stylet D'Ishtar",
+            "degats": 300,
+            "vitesse": -40,
+            "type": "Semi-Légendaire",
+            "special": "Poison : Dès que le joueur est touché, il perd 150 de vitalité/tour."
+          },
+          {
+            "nom": "Lal'Ensiaë",
+            "degats": 310,
+            "vitesse": -50,
+            "type": "Semi-Légendaire",
+            "special": "La valeur des Coups Critiques est augmentée de 50%"
+          },
+          {
+            "nom": "Doubles-dagues de Catharsis",
+            "degats": 256,
+            "vitesse": 15,
+            "prix": 1500,
+            "type": "Craft",
+            "slotsArmes": 2
+          }
+        ]
+      },
+      {
+        "Griffes": [
+          {
+            "nom": "Griffe en fer",
+            "degats": 2,
+            "prix": 10,
+            "type": "Normale"
+          },
+          {
+            "nom": "Griffe commune",
+            "degats": 5,
+            "prix": 30,
+            "type": "Normale"
+          },
+          {
+            "nom": "Griffe d'acier",
+            "degats": 18,
+            "prix": 65,
+            "type": "Normale"
+          },
+          {
+            "nom": "Griffe 'knot",
+            "degats": 32,
+            "prix": 100,
+            "type": "Normale"
+          },
+          {
+            "nom": "Griffe des Roses",
+            "degats": 64,
+            "prix": 300,
+            "type": "Craft"
+          },
+          {
+            "nom": "Tessen",
+            "degats": 78,
+            "type": "Exotique",
+            "special": "La valeur des Coups critiques est augmentée de 25%."
+          },
+          {
+            "nom": "Griffe Nεrό",
+            "degats": 86,
+            "vitesse": 10,
+            "type": "Exotique",
+            "special": "Arme immergée : Octroie +15 de dégâts et +55 de vitesse par tour. Fonctionne seulement dans la région 'Mers & Océans'."
+          },
+          {
+            "nom": "Griffe en adamantium",
+            "degats": 92,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Griffe periée",
+            "degats": 100,
+            "vitesse": -10,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Griffe des marais",
+            "degats": 110,
+            "prix": 600,
+            "type": "Normale",
+            "special": "+10% de dégâts en cas de RP dans l'Ouest."
+          },
+          {
+            "nom": "Griffe du Tigre",
+            "degats": 128,
+            "prix": 700,
+            "type": "Craft"
+          },
+          {
+            "nom": "Toriffe",
+            "degats": 146,
+            "vitesse": -15,
+            "type": "Craft"
+          },
+          {
+            "nom": "Mamus & Ayus",
+            "degats": 164,
+            "vitesse": -25,
+            "prix": 1000,
+            "type": "Craft"
+          },
+          {
+            "nom": "Griffe Fürrhe",
+            "degats": 300,
+            "vitesse": -40,
+            "type": "Semi-Légendaire",
+            "special": "À chaque Coup Réussi, le joueur perd 75 de vitalité/tour (cumulable à l'infini)."
+          },
+          {
+            "nom": "Double-grifes Daconiques",
+            "degats": 256,
+            "prix": 1500,
+            "vitesse": 15,
+            "type": "Craft"
+          }
+        ]
+      },
+      {
+        "Cestes": [
+          {
+            "nom": "Gant troué",
+            "degats": 1,
+            "vitesse": -1,
+            "prix": 5,
+            "type": "Normale"
+          },
+          {
+            "nom": "Ceste classique",
+            "degats": 6,
+            "vitesse": -7,
+            "prix": 30,
+            "type": "Normale"
+          },
+          {
+            "nom": "Ceste de pugiliste",
+            "degats": 22,
+            "vitesse": -14,
+            "prix": 65,
+            "type": "Normale"
+          },
+          {
+            "nom": "Cest'oplasma",
+            "degats": 42,
+            "vitesse": -21,
+            "prix": 100,
+            "type": "Normale"
+          },
+          {
+            "nom": "Cestrum",
+            "degats": 84,
+            "vitesse": -28,
+            "prix": 300,
+            "type": "Craft"
+          },
+          {
+            "nom": "Yugake",
+            "degats": 103,
+            "vitesse": -32,
+            "type": "Exotique",
+            "special": "La valeur des Coups critiques est augmentée de 25%."
+          },
+          {
+            "nom": "Ceste Nεrό",
+            "degats": 105,
+            "vitesse": -32,
+            "type": "Exotique",
+            "special": "Arme immergée : Octroie +30 de dégâts et +20 de vitesse par tour. Fonctionne seulement dans la région 'Mers & Océans'."
+          },
+          {
+            "nom": "Le Sesterce",
+            "degats": 121,
+            "vitesse": -35,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Cestival",
+            "degats": 141,
+            "vitesse": -41,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Droitelet",
+            "degats": 169,
+            "vitesse": -42,
+            "prix": 700,
+            "type": "Craft"
+          },
+          {
+            "nom": "Wane Peunshe Mane",
+            "degats": 216,
+            "vitesse": -48,
+            "prix": 1000,
+            "type": "Craft"
+          },
+          {
+            "nom": "Grant'Orrino",
+            "degats": 396,
+            "vitesse": -77,
+            "type": "Semi-Légendaire",
+            "special": "Un pour tous : A chaque attaque réussie, le joueur obtient un marqueur de 20% (25% si CC) cumulable jusqu'à 75%. Le joueur peut décider à n’importe quel tour d’activer ses marqueurs. Sa prochaine attaque sera alors augmentée du pourcentage de marqueurs stockés."
+          },
+          {
+            "nom": "Poings Dùralassiens",
+            "degats": 282,
+            "vitesse": -56,
+            "type": "Exotique",
+            "slotsArmes": 2,
+            "special": "Les dégâts sont augmentés de 50% en début de combat sur le continent (hors Wystéria et Mers & Océans)."
+          },
+          {
+            "nom": "Poignes de cristal",
+            "degats": 338,
+            "vitesse": -63,
+            "prix": 1500,
+            "slotsArmes": 2,
+            "type": "Craft"
+          },
+          {
+            "nom": "Marrons glacés",
+            "degats": 300,
+            "vitesse": -73,
+            "vitalite": 100,
+            "prix": 1500,
+            "type": "Craft"
+          }
+        ]
+      },
+      {
+        "Arcs": [
+          {
+            "nom": "Vieil arc",
+            "degats": 3,
+            "vitesse": -8,
+            "prix": 10,
+            "type": "Normale"
+          },
+          {
+            "nom": "Arc banal",
+            "degats": 8,
+            "vitesse": -16,
+            "prix": 30,
+            "type": "Normale"
+          },
+          {
+            "nom": "Arc elfique",
+            "degats": 29,
+            "vitesse": -24,
+            "prix": 65,
+            "type": "Normale"
+          },
+          {
+            "nom": "Psykokw'arc",
+            "degats": 56,
+            "vitesse": -32,
+            "prix": 100,
+            "type": "Normale"
+          },
+          {
+            "nom": "M'arc'guerite",
+            "degats": 102,
+            "vitesse": -40,
+            "prix": 300,
+            "type": "Craft"
+          },
+          {
+            "nom": "Han Kyu",
+            "degats": 125,
+            "vitesse": -44,
+            "type": "Exotique",
+            "special": "La valeur des Coups critiques est augmentée de 25%."
+          },
+          {
+            "nom": "Arc Nεrό",
+            "degats": 127,
+            "vitesse": -41,
+            "type": "Exotique",
+            "special": "Arme immergée : Octroie +40 de dégâts et +30 de vitesse par tour. Fonctionne seulement dans la région 'Mers & Océans'."
+          },
+          {
+            "nom": "Arc argenté",
+            "degats": 147,
+            "vitesse": -48,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Arc sylvain",
+            "degats": 167,
+            "vitesse": -55,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Arc long des Dryades",
+            "degats": 176,
+            "vitesse": -52,
+            "prix": 600,
+            "type": "Normale",
+            "special": "+10% de dégâts en cas de RP dans l'Ouest"
+          },
+          {
+            "nom": "Le Renarc",
+            "degats": 205,
+            "vitesse": -56,
+            "prix": 700,
+            "type": "Craft"
+          },
+          {
+            "nom": "Le Torarc",
+            "degats": 234,
+            "vitesse": -60,
+            "type": "Craft",
+            "special": " Peut être béni par une divinité djöllfuline."
+          },
+          {
+            "nom": "Arc de Link",
+            "degats": 262,
+            "vitesse": -64,
+            "prix": 1000,
+            "type": "Craft"
+          },
+          {
+            "nom": "L'arc de Thrym",
+            "degats": 480,
+            "vitesse": -102,
+            "type": "Semi-Légendaire",
+            "special": "Glace : À chaque Coup Réussi, le joueur perd 200 de vitesse."
+          },
+          {
+            "nom": "Harcquelance",
+            "degats": 410,
+            "vitesse": -84,
+            "prix": 1500,
+            "slotsArmes": 2,
+            "type": "Craft"
+          }
+        ]
+      },
+      {
+        "Arbaletes": [
+          {
+            "nom": "Arbalète miteuse",
+            "degats": 3,
+            "vitesse": -8,
+            "prix": 10,
+            "type": "Normale"
+          },
+          {
+            "nom": "Arbalète de débutant",
+            "degats": 8,
+            "vitesse": -16,
+            "prix": 30,
+            "type": "Normale"
+          },
+          {
+            "nom": "Arbalète pourpre",
+            "degats": 29,
+            "vitesse": -24,
+            "prix": 65,
+            "type": "Normale"
+          },
+          {
+            "nom": "Leuveihn'arabalète",
+            "degats": 56,
+            "vitesse": -32,
+            "prix": 100,
+            "type": "Normale"
+          },
+          {
+            "nom": "Nénuphar'balète",
+            "degats": 102,
+            "vitesse": -40,
+            "prix": 300,
+            "type": "Craft"
+          },
+          {
+            "nom": "Sarbacane",
+            "degats": 125,
+            "vitesse": -44,
+            "type": "Exotique",
+            "special": "La valeur des Coups critiques est augmentée de 25%."
+          },
+          {
+            "nom": "Arbalète Nεrό",
+            "degats": 127,
+            "vitesse": -41,
+            "type": "Exotique",
+            "special": "Arme immergée : Octroie +40 de dégâts et +30 de vitesse par tour. Fonctionne seulement dans la région 'Mers & Océans'."
+          },
+          {
+            "nom": "Lapulazul'arbalète",
+            "degats": 147,
+            "vitesse": -48,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Léz'arbalète",
+            "degats": 167,
+            "vitesse": -55,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Arbalète orque",
+            "degats": 176,
+            "vitesse": -52,
+            "prix": 600,
+            "type": "Normale",
+            "special": "+10% de dégâts en cas de RP dans le Centre."
+          },
+          {
+            "nom": "Arbalète Animale",
+            "degats": 205,
+            "vitesse": -56,
+            "prix": 700,
+            "type": "Craft"
+          },
+          {
+            "nom": "Arbaleishi",
+            "degats": 234,
+            "vitesse": -60,
+            "type": "Craft",
+            "special": " Peut être béni par une divinité djöllfuline."
+          },
+          {
+            "nom": "Van H'Elzio",
+            "degats": 262,
+            "vitesse": -64,
+            "prix": 1000,
+            "type": "Craft"
+          },
+          {
+            "nom": "L'Arbalète foudryante de Tilaüme Gwell",
+            "degats": 480,
+            "vitesse": -102,
+            "type": "Semi-Légendaire",
+            "special": "Foudre : Dès que le joueur est touché, il perd 150 de vitesse/tour."
+          },
+          {
+            "nom": "Mini-Baliste",
+            "degats": 410,
+            "vitesse": -84,
+            "prix": 1500,
+            "slotsArmes": 2,
+            "type": "Craft"
+          },
+          {
+            "nom": "Frelons jumeaux",
+            "degats": 384,
+            "vitesse": -40,
+            "prix": 1500,
+            "slotsArmes": 2,
+            "type": "Craft",
+            "special": "Nécessite le Plan des Frelons jumeaux."
+          }
+        ]
+      },
+      {
+        "Frondes": [
+          {
+            "nom": "Bout de bois",
+            "degats": 1,
+            "vitesse": -1,
+            "prix": 5,
+            "type": "Normale"
+          },
+          {
+            "nom": "Lance-pierre",
+            "degats": 6,
+            "vitesse": -7,
+            "prix": 30,
+            "type": "Normale"
+          },
+          {
+            "nom": "Fronde ishtarienne",
+            "degats": 22,
+            "vitesse": -14,
+            "prix": 65,
+            "type": "Normale"
+          },
+          {
+            "nom": "Dracaufronde",
+            "degats": 42,
+            "vitesse": -21,
+            "prix": 100,
+            "type": "Normale"
+          },
+          {
+            "nom": "Fronde'boisier",
+            "degats": 84,
+            "vitesse": -28,
+            "prix": 300,
+            "type": "Craft"
+          },
+          {
+            "nom": "Shogue",
+            "degats": 103,
+            "vitesse": -32,
+            "type": "Exotique",
+            "special": "La valeur des Coups critiques est augmentée de 25%."
+          },
+          {
+            "nom": "Fronde Nεrό",
+            "degats": 105,
+            "vitesse": -32,
+            "type": "Exotique",
+            "special": "Arme immergée : Octroie +30 de dégâts et +20 de vitesse par tour. Fonctionne seulement dans la région 'Mers & Océans'."
+          },
+          {
+            "nom": "Lanceur de topaze",
+            "degats": 121,
+            "vitesse": -35,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Fustibale forestière",
+            "degats": 141,
+            "vitesse": -41,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Frelonde",
+            "degats": 169,
+            "vitesse": -42,
+            "prix": 700,
+            "type": "Craft"
+          },
+          {
+            "nom": "Frond'Onsaké",
+            "degats": 216,
+            "vitesse": -48,
+            "prix": 1000,
+            "type": "Craft"
+          },
+          {
+            "nom": "Projette-tronc de Lug",
+            "degats": 396,
+            "vitesse": -77,
+            "type": "Semi-Légendaire",
+            "special": "Chute d'arbre : L'attaque du propriétaire ne peut pas être réduite, ni annulée par la pierre de résurrection."
+          },
+          {
+            "nom": "Mini-trébuchet",
+            "degats": 338,
+            "vitesse": -63,
+            "prix": 1500,
+            "slotsArmes": 2,
+            "type": "Craft"
+          }
+        ]
+      },
+      {
+        "Tonfas": [
+          {
+            "nom": "Tonfa abîmé",
+            "degats": 4,
+            "vitesse": -10,
+            "vitalite": 2,
+            "prix": 10,
+            "type": "Normale"
+          },
+          {
+            "nom": "Tonfa en bois",
+            "degats": 8,
+            "vitesse": -20,
+            "vitalite": 4,
+            "prix": 30,
+            "type": "Normale"
+          },
+          {
+            "nom": "Tonfa du paysan",
+            "degats": 36,
+            "vitesse": -30,
+            "vitalite": 15,
+            "prix": 65,
+            "type": "Normale"
+          },
+          {
+            "nom": "Zigza Tonfa",
+            "degats": 65,
+            "vitesse": -40,
+            "vitalite": 22,
+            "prix": 100,
+            "type": "Normale"
+          },
+          {
+            "nom": "TonFatsia",
+            "degats": 120,
+            "vitesse": -30,
+            "vitalite": 41,
+            "prix": 300,
+            "type": "Craft"
+          },
+          {
+            "nom": "Tonfa Ninja",
+            "degats": 150,
+            "vitalite": 51,
+            "vitesse": -55,
+            "type": "Exotique",
+            "special": "La valeur des Coups critiques est augmentée de 25%."
+          },
+          {
+            "nom": "Tonfa Nεrό",
+            "degats": 155,
+            "vitalite": 5,
+            "vitesse": -52,
+            "type": "Exotique",
+            "special": "Arme immergée : Octroie +20 de dégâts, +15 de vitesse et 35 de vitalité par tour. Fonctionne seulement dans la région 'Mers & Océans'."
+          },
+          {
+            "nom": "Tonfamazonite",
+            "degats": 180,
+            "vitalite": 61,
+            "vitesse": -60,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Tonfaïence",
+            "degats": 205,
+            "vitesse": -68,
+            "vitalite": 70,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Thon'Fha",
+            "degats": 250,
+            "vitesse": -70,
+            "vitalite": 85,
+            "prix": 700,
+            "type": "Craft"
+          },
+          {
+            "nom": "Thonfishui",
+            "degats": 285,
+            "vitesse": -75,
+            "vitalite": 96,
+            "type": "Craft",
+            "special": "Peut être béni par une divinité djöllfuline."
+          },
+          {
+            "nom": "Kazama",
+            "degats": 320,
+            "vitesse": -80,
+            "vitalite": 107,
+            "prix": 1000,
+            "type": "Craft"
+          },
+          {
+            "nom": "Tonfa du sacrifice",
+            "degats": 400,
+            "vitesse": 120,
+            "vitalite": -180,
+            "prix": 1000,
+            "type": "Craft"
+          },
+          {
+            "nom": "Nadsuhydr'Tonfa",
+            "degats": 586,
+            "vitesse": -128,
+            "vitalite": 135,
+            "type": "Semi-Légendaire",
+            "special": " Bouclier aqueux : Les dégâts directs subis par toute l'équipe sont réduits de 15%."
+          },
+          {
+            "nom": "Les Caducées",
+            "degats": 500,
+            "vitesse": -105,
+            "vitalite": 166,
+            "prix": 1500,
+            "slotsArmes": 2,
+            "type": "Craft"
+          }
+        ]
+      },
+      {
+        "Fleaux": [
+          {
+            "nom": "Martinet",
+            "degats": 4,
+            "vitesse": -10,
+            "vitalite": 2,
+            "prix": 10,
+            "type": "Normale"
+          },
+          {
+            "nom": "Fléau du paladin",
+            "degats": 8,
+            "vitesse": -20,
+            "vitalite": 4,
+            "prix": 30,
+            "type": "Normale"
+          },
+          {
+            "nom": "Goupillon",
+            "degats": 36,
+            "vitesse": -30,
+            "vitalite": 15,
+            "prix": 65,
+            "type": "Normale"
+          },
+          {
+            "nom": "Fléau Satueur",
+            "degats": 65,
+            "vitesse": -40,
+            "vitalite": 22,
+            "prix": 100,
+            "type": "Normale"
+          },
+          {
+            "nom": "Flé'Haur'Tensia",
+            "degats": 120,
+            "vitesse": -30,
+            "vitalite": 41,
+            "prix": 300,
+            "type": "Craft"
+          },
+          {
+            "nom": "Nunchaku",
+            "degats": 150,
+            "vitalite": 51,
+            "vitesse": -55,
+            "type": "Exotique",
+            "special": "La valeur des Coups critiques est augmentée de 25%."
+          },
+          {
+            "nom": "Fléau Nεrό",
+            "degats": 155,
+            "vitalite": 5,
+            "vitesse": -52,
+            "type": "Exotique",
+            "special": "Arme immergée : Octroie +35 de dégâts, +20 de vitesse et 15 de vitalité par tour. Fonctionne seulement dans la région 'Mers & Océans'."
+          },
+          {
+            "nom": "Fléosse Doray",
+            "degats": 180,
+            "vitalite": 61,
+            "vitesse": -60,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Morgenstern",
+            "degats": 205,
+            "vitesse": -68,
+            "vitalite": 70,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Buffléo",
+            "degats": 250,
+            "vitesse": -70,
+            "vitalite": 85,
+            "prix": 700,
+            "type": "Craft"
+          },
+          {
+            "nom": "Fléhishui",
+            "degats": 285,
+            "vitesse": -75,
+            "vitalite": 96,
+            "type": "Craft",
+            "special": "Peut être béni par une divinité djöllfuline."
+          },
+          {
+            "nom": "Fléau d'Angmar",
+            "degats": 320,
+            "vitesse": -80,
+            "vitalite": 107,
+            "prix": 1000,
+            "type": "Craft"
+          },
+          {
+            "nom": "Fléau Frande",
+            "degats": 400,
+            "vitesse": 120,
+            "vitalite": -180,
+            "prix": 1000,
+            "type": "Craft"
+          },
+          {
+            "nom": "Fléau d'armagyar",
+            "degats": 586,
+            "vitesse": -128,
+            "vitalite": 135,
+            "type": "Semi-Légendaire",
+            "special": "Pointes de feu : Chaque Coup Réussi augmente la vitalité du porteur de 10%. Chaque attaque subie augmente les dégâts du porteur de 10%. En cas de coup critique, les stats du porteur sont augmentées de 15%"
+          },
+          {
+            "nom": "L'Ecrabouilleur du Croisé",
+            "degats": 500,
+            "vitesse": -105,
+            "vitalite": 166,
+            "prix": 1500,
+            "slotsArmes": 2,
+            "type": "Craft"
+          }
+        ]
+      },
+      {
+        "Lances": [
+          {
+            "nom": "Lance poussiéreuse",
+            "degats": 5,
+            "vitesse": -12,
+            "prix": 10,
+            "type": "Normale"
+          },
+          {
+            "nom": "Lance de néophyte",
+            "degats": 12,
+            "vitesse": -24,
+            "prix": 30,
+            "type": "Normale"
+          },
+          {
+            "nom": "Lance du fantassin",
+            "degats": 43,
+            "vitesse": -36,
+            "prix": 65,
+            "type": "Normale"
+          },
+          {
+            "nom": "Pique à Tschou",
+            "degats": 77,
+            "vitesse": -48,
+            "prix": 65,
+            "type": "Normale"
+          },
+          {
+            "nom": "Lil'ance",
+            "degats": 153,
+            "vitesse": -60,
+            "prix": 300,
+            "type": "Craft"
+          },
+          {
+            "nom": "Yuri",
+            "degats": 187,
+            "vitesse": -66,
+            "type": "Exotique",
+            "special": "La valeur des Coups critiques est augmentée de 25%."
+          },
+          {
+            "nom": "Lance Nεrό",
+            "degats": 200,
+            "vitesse": -66,
+            "type": "Exotique",
+            "special": "Arme immergée : Octroie +25 de dégâts et +45 de vitesse par tour. Fonctionne seulement dans la région 'Mers & Océans'."
+          },
+          {
+            "nom": "Lance cristallisée",
+            "degats": 220,
+            "vitesse": -72,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Lance dorée",
+            "degats": 240,
+            "vitesse": -78,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Trident abyssal",
+            "degats": 264,
+            "vitesse": -81,
+            "prix": 600,
+            "type": "Normale",
+            "special": "+10% de dégâts en cas de RP dans les Mers et océans."
+          },
+          {
+            "nom": "Queue de manticore",
+            "degats": 307,
+            "vitesse": -84,
+            "prix": 700,
+            "type": "Craft"
+          },
+          {
+            "nom": "Lancishuii",
+            "degats": 531,
+            "vitesse": -90,
+            "type": "Craft",
+            "special": "Peut être béni par une divinité djöllfuline."
+          },
+          {
+            "nom": "Fourche démoniaque",
+            "degats": 350,
+            "vitesse": -90,
+            "type": "Exotique",
+            "special": "Mauvais présage : Les PNJ superstitieux voient leurs dégâts réduits de 10%."
+          },
+          {
+            "nom": "L'Heavy lance de Girardot",
+            "degats": 394,
+            "vitesse": -96,
+            "prix": 1000,
+            "type": "Craft"
+          },
+          {
+            "nom": "Hallebarde ailée",
+            "degats": 722,
+            "vitesse": -154,
+            "type": "Semi-Légendaire",
+            "special": "Zéphyr : Les dégâts sont augmentés de 20% contre les Dragons, les Dinosaures, les Reptiles, les Nagas, les Arlequins."
+          },
+          {
+            "nom": "Sarisse",
+            "degats": 614,
+            "vitesse": -126,
+            "prix": 1500,
+            "type": "Craft",
+            "slotsArmes": 2
+          },
+          {
+            "nom": "Perce-Coeur",
+            "degats": 654,
+            "vitesse": -126,
+            "prix": 1500,
+            "type": "Craft",
+            "slotsArmes": 2
+          }
+        ]
+      },
+      {
+        "Faux": [
+          {
+            "nom": "Faux usée",
+            "degats": 6,
+            "vitesse": -14,
+            "prix": 10,
+            "type": "Normale"
+          },
+          {
+            "nom": "Faux du paysan",
+            "degats": 14,
+            "vitesse": -28,
+            "prix": 30,
+            "type": "Normale"
+          },
+          {
+            "nom": "Faux Cheuse",
+            "degats": 50,
+            "vitesse": -42,
+            "prix": 65,
+            "type": "Normale"
+          },
+          {
+            "nom": "Poussi'faux",
+            "degats": 90,
+            "vitesse": -56,
+            "prix": 100,
+            "type": "Normale"
+          },
+          {
+            "nom": "Faux Gère",
+            "degats": 179,
+            "vitesse": -70,
+            "prix": 300,
+            "type": "Craft"
+          },
+          {
+            "nom": "Bisento",
+            "degats": 219,
+            "vitesse": -77,
+            "type": "Exotique",
+            "special": "La valeur des Coups critiques est augmentée de 25%."
+          },
+          {
+            "nom": "Faux Nεrό",
+            "degats": 226,
+            "vitesse": -84,
+            "type": "Exotique",
+            "special": "Arme immergée : Octroie +35 de dégâts et +35 de vitesse par tour. Fonctionne seulement dans la région 'Mers & Océans'."
+          },
+          {
+            "nom": "F'opale",
+            "degats": 258,
+            "vitesse": -84,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Faux terne",
+            "degats": 290,
+            "vitesse": -94,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Faux strygienne",
+            "degats": 264,
+            "vitesse": -81,
+            "prix": 600,
+            "type": "Normale",
+            "special": "+10% de dégâts en cas de RP dans l'Est."
+          },
+          {
+            "nom": "Faux Kön",
+            "degats": 358,
+            "vitesse": -98,
+            "prix": 700,
+            "type": "Craft"
+          },
+          {
+            "nom": "Tofaura",
+            "degats": 419,
+            "vitesse": -110,
+            "type": "Craft",
+            "special": "Peut être béni par une divinité djöllfuline."
+          },
+          {
+            "nom": "Faux Zasalamel",
+            "degats": 460,
+            "vitesse": -122,
+            "prix": 1000,
+            "type": "Craft"
+          },
+          {
+            "nom": "Ec'lame",
+            "degats": 410,
+            "vitesse": -110,
+            "prix": 1000,
+            "type": "Craft",
+            "special": "Purification : En cas de Coup Critique contre les Abominations, les Démons, les Squelettes, les Morts-vivants, les Vampires, les Thérianthropes, les Nagas, les Stryges Noirs, et les Corrompus, les statistiques de la cible sont diminuées de 10% (cumulable)."
+          },
+          {
+            "nom": "Nîg'Lumaë",
+            "degats": 853,
+            "vitesse": -154,
+            "type": "Semi-Légendaire",
+            "special": "Aura ténébreuse : Les dégâts sont augmentés de 15% contre les Archers, Paladins, Protecteurs, Guerriers, Technophiles, Ensorceleurs, Guérisseurs, Mages."
+          },
+          {
+            "nom": "La Catabase",
+            "degats": 716,
+            "vitesse": -167,
+            "prix": 1500,
+            "type": "Craft",
+            "slotsArmes": 2
+          },
+          {
+            "nom": "Faucheuse dentelée",
+            "degats": 654,
+            "vitesse": -126,
+            "type": "Exotique",
+            "slotsArmes": 2,
+            "special": "Saignement : La cible perd 70 de vitalité/tour (cumulable à chaque Coup Réussi)."
+          }
+        ]
+      },
+      {
+        "Epees": [
+          {
+            "nom": "Epée brisée",
+            "degats": 5,
+            "vitesse": -12,
+            "prix": 10,
+            "type": "Normale"
+          },
+          {
+            "nom": "Epée courte",
+            "degats": 12,
+            "vitesse": -24,
+            "prix": 30,
+            "type": "Normale"
+          },
+          {
+            "nom": "LEpée chevaleresque",
+            "degats": 43,
+            "vitesse": -36,
+            "prix": 65,
+            "type": "Normale"
+          },
+          {
+            "nom": "Epée Léctrode",
+            "degats": 77,
+            "vitesse": -48,
+            "prix": 65,
+            "type": "Normale"
+          },
+          {
+            "nom": "Orchid'épée",
+            "degats": 153,
+            "vitesse": -60,
+            "prix": 300,
+            "type": "Craft"
+          },
+          {
+            "nom": "Katana",
+            "degats": 187,
+            "vitesse": -66,
+            "type": "Exotique",
+            "special": "La valeur des Coups critiques est augmentée de 25%."
+          },
+          {
+            "nom": "Epée Nεrό",
+            "degats": 200,
+            "vitesse": -66,
+            "type": "Exotique",
+            "special": "Arme immergée : Octroie +20 de dégâts et +50 de vitesse par tour. Fonctionne seulement dans la région 'Mers & Océans'."
+          },
+          {
+            "nom": "Epée dorée",
+            "degats": 220,
+            "vitesse": -72,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Epée sylvestre",
+            "degats": 240,
+            "vitesse": -78,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Rapière stellaroïse",
+            "degats": 264,
+            "vitesse": -81,
+            "prix": 600,
+            "type": "Normale",
+            "special": "+10% de dégâts en cas de RP dans le Centre."
+          },
+          {
+            "nom": "Epée Reptilienne",
+            "degats": 307,
+            "vitesse": -84,
+            "prix": 700,
+            "type": "Craft"
+          },
+          {
+            "nom": "Extorée",
+            "degats": 531,
+            "vitesse": -90,
+            "type": "Craft",
+            "special": "Peut être béni par une divinité djöllfuline."
+          },
+          {
+            "nom": "Gram",
+            "degats": 394,
+            "vitesse": -96,
+            "prix": 1000,
+            "type": "Craft"
+          },
+          {
+            "nom": "Excalibur",
+            "degats": 722,
+            "vitesse": -154,
+            "type": "Semi-Légendaire",
+            "special": "Flamme ardente : Les dégâts sont augmentés de 20% contre les Abominations, les Démons, les Squelettes, les Morts-vivants, les Vampires, les Corrompus."
+          },
+          {
+            "nom": "ZweiHänder",
+            "degats": 614,
+            "vitesse": -126,
+            "prix": 1500,
+            "type": "Craft",
+            "slotsArmes": 2
+          },
+          {
+            "nom": "Pourfendeuse dentelée",
+            "degats": 654,
+            "vitesse": -126,
+            "type": "Exotique",
+            "slotsArmes": 2,
+            "special": "Saignement : La cible perd 120 de vitalité/tour (cumulable à chaque Coup Réussi)."
+          }
+        ]
+      },
+      {
+        "Haches": [
+          {
+            "nom": "Hachette",
+            "degats": 6,
+            "vitesse": -14,
+            "prix": 10,
+            "type": "Normale"
+          },
+          {
+            "nom": "Hache commune",
+            "degats": 14,
+            "vitesse": -28,
+            "prix": 30,
+            "type": "Normale"
+          },
+          {
+            "nom": "Hache à double tranchant",
+            "degats": 50,
+            "vitesse": -42,
+            "prix": 65,
+            "type": "Normale"
+          },
+          {
+            "nom": "Hache Pikot",
+            "degats": 90,
+            "vitesse": -56,
+            "prix": 100,
+            "type": "Normale"
+          },
+          {
+            "nom": "Pétuni'hache",
+            "degats": 179,
+            "vitesse": -70,
+            "prix": 300,
+            "type": "Craft"
+          },
+          {
+            "nom": "Kamao",
+            "degats": 219,
+            "vitesse": -77,
+            "type": "Exotique",
+            "special": "La valeur des Coups critiques est augmentée de 25%."
+          },
+          {
+            "nom": "La Hache Téhacrer'Dï",
+            "degats": 200,
+            "vitalite": 100,
+            "vitesse": -120,
+            "prix": 450,
+            "type": "Craft"
+          },
+          {
+            "nom": "Hache Nεrό",
+            "degats": 226,
+            "vitesse": -84,
+            "type": "Exotique",
+            "special": "Arme immergée : Octroie +35 de dégâts et +40 de vitesse par tour. Fonctionne seulement dans la région 'Mers & Océans'."
+          },
+          {
+            "nom": "Brise-diamant",
+            "degats": 258,
+            "vitesse": -84,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Hache en grès",
+            "degats": 290,
+            "vitesse": -94,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Hache de Lagmarù",
+            "degats": 264,
+            "vitesse": -81,
+            "prix": 600,
+            "type": "Normale",
+            "special": "+10% de dégâts en cas de RP dans le Nord."
+          },
+          {
+            "nom": "Corbr'hache",
+            "degats": 358,
+            "vitesse": -98,
+            "prix": 700,
+            "type": "Craft"
+          },
+          {
+            "nom": "Hachui",
+            "degats": 419,
+            "vitesse": -110,
+            "type": "Craft",
+            "special": "Peut être béni par une divinité djöllfuline."
+          },
+          {
+            "nom": "Hache de Bourreau",
+            "degats": 400,
+            "vitesse": -110,
+            "type": "Exotique",
+            "special": "Bourreau : Les PNJ superstitieux sont susceptibles d'être exécutés par cette arme. Si le manieur fait un Coup Critique ou cumule deux Coups Réussis, il peut décider de tuer l'un de ces PNJ."
+          },
+          {
+            "nom": "Astaröth",
+            "degats": 460,
+            "vitesse": -122,
+            "prix": 1000,
+            "type": "Craft"
+          },
+          {
+            "nom": "Alb'Lumaë",
+            "degats": 843,
+            "vitesse": -195,
+            "type": "Semi-Légendaire",
+            "special": "Aura lumineuse : Les dégâts sont augmentés de 15% contre les Arlequins, Assassins, Corrompus, Barbares, Voleurs, Guetteurs, Virtuoses, Maîtres d'armes"
+          },
+          {
+            "nom": "Hache de Berseker",
+            "degats": 716,
+            "vitesse": -167,
+            "prix": 1500,
+            "type": "Craft",
+            "slotsArmes": 2
+          }
+        ]
+      },
+      {
+        "Massues": [
+          {
+            "nom": "Petite massue",
+            "degats": 7,
+            "vitesse": -18,
+            "prix": 10,
+            "type": "Normale"
+          },
+          {
+            "nom": "Gourdin de bois",
+            "degats": 18,
+            "vitesse": -36,
+            "prix": 30,
+            "type": "Normale"
+          },
+          {
+            "nom": "Gourdin noir",
+            "degats": 65,
+            "vitesse": -54,
+            "prix": 65,
+            "type": "Normale"
+          },
+          {
+            "nom": "Masse Tshoppeur",
+            "degats": 115,
+            "vitesse": -72,
+            "prix": 100,
+            "type": "Normale"
+          },
+          {
+            "nom": "Masse Ureau",
+            "degats": 230,
+            "vitesse": -90,
+            "prix": 300,
+            "type": "Craft"
+          },
+          {
+            "nom": "Tetsubo",
+            "degats": 286,
+            "vitesse": -99,
+            "type": "Exotique",
+            "special": "La valeur des Coups critiques est augmentée de 25%."
+          },
+          {
+            "nom": "Masse Nεrό",
+            "degats": 276,
+            "vitesse": -91,
+            "type": "Exotique",
+            "special": "Arme immergée : Octroie +40 de dégâts et +30 de vitesse par tour. Fonctionne seulement dans la région 'Mers & Océans'."
+          },
+          {
+            "nom": "Masse Aphir",
+            "degats": 331,
+            "vitesse": -108,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Rug'bis Masse",
+            "degats": 386,
+            "vitesse": -125,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Massue Brigande",
+            "degats": 396,
+            "vitesse": -117,
+            "prix": 600,
+            "type": "Normale",
+            "special": "+10% de dégâts en cas de RP dans le Sud."
+          },
+          {
+            "nom": "Le Gourdaim",
+            "degats": 460,
+            "vitesse": -126,
+            "prix": 700,
+            "type": "Craft"
+          },
+          {
+            "nom": "Machui",
+            "degats": 525,
+            "vitesse": -140,
+            "type": "Craft",
+            "special": "Peut être béni par une divinité djöllfuline."
+          },
+          {
+            "nom": "Massue de Rock",
+            "degats": 590,
+            "vitesse": -154,
+            "prix": 1000,
+            "type": "Craft"
+          },
+          {
+            "nom": "Magistar",
+            "degats": 1075,
+            "vitesse": -195,
+            "type": "Semi-Légendaire",
+            "special": "Eboulement : En cas de Coup Critique, la cible ne tapera que 25% de ses dégâts, assommée."
+          },
+          {
+            "nom": "Ropalaë",
+            "degats": 1085,
+            "vitesse": -310,
+            "type": "Semi-Légendaire",
+            "special": "La valeur des Coups Critiques est augmentée de 50%."
+          },
+          {
+            "nom": "Masse gargantuesque",
+            "degats": 920,
+            "vitesse": -209,
+            "prix": 1500,
+            "type": "Craft",
+            "slotsArmes": 2
+          }
+        ]
+      },
+      {
+        "Marteaux": [
+          {
+            "nom": "Marteau en bois",
+            "degats": 7,
+            "vitesse": -18,
+            "prix": 10,
+            "type": "Normale"
+          },
+          {
+            "nom": "Marteau de bricolage",
+            "degats": 18,
+            "vitesse": -36,
+            "prix": 30,
+            "type": "Normale"
+          },
+          {
+            "nom": "Marteau de guerre",
+            "degats": 65,
+            "vitesse": -54,
+            "prix": 65,
+            "type": "Normale"
+          },
+          {
+            "nom": "Mag'marteau",
+            "degats": 115,
+            "vitesse": -72,
+            "prix": 100,
+            "type": "Normale"
+          },
+          {
+            "nom": "Le Toad",
+            "degats": 230,
+            "vitesse": -90,
+            "prix": 300,
+            "type": "Craft"
+          },
+          {
+            "nom": "Dai Tsuchi",
+            "degats": 286,
+            "vitesse": -99,
+            "type": "Exotique",
+            "special": "La valeur des Coups critiques est augmentée de 25%."
+          },
+          {
+            "nom": "Marteau Nεrό",
+            "degats": 276,
+            "vitesse": -91,
+            "type": "Exotique",
+            "special": "Arme immergée : Octroie +45 de dégâts et +25 de vitesse par tour. Fonctionne seulement dans la région 'Mers & Océans'."
+          },
+          {
+            "nom": "Mart'opaze",
+            "degats": 331,
+            "vitesse": -108,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Branche cogneuse",
+            "degats": 386,
+            "vitesse": -125,
+            "prix": 500,
+            "type": "Craft"
+          },
+          {
+            "nom": "Maillet du Baldor",
+            "degats": 396,
+            "vitesse": -117,
+            "prix": 600,
+            "type": "Normale",
+            "special": "+10% de dégâts en cas de RP dans l'Est."
+          },
+          {
+            "nom": "Marteau Rô",
+            "degats": 460,
+            "vitesse": -126,
+            "prix": 700,
+            "type": "Craft"
+          },
+          {
+            "nom": "Martora",
+            "degats": 525,
+            "vitesse": -140,
+            "type": "Craft",
+            "special": "Peut être béni par une divinité djöllfuline."
+          },
+          {
+            "nom": "Wärehammer",
+            "degats": 590,
+            "vitesse": -154,
+            "prix": 1000,
+            "type": "Craft"
+          },
+          {
+            "nom": "Concasseur de citrouilles",
+            "degats": 525,
+            "vitesse": -140,
+            "type": "Exotique",
+            "special": "Écraseur : Le manieur peut décider lors d'un tour de frapper la tête du marteau (en forme de citrouille) contre le sol plutôt que d'attaquer. En cas de réussite, ses dégâts augmentent de 10% (coup critique : 15%) et il reçoit une réduction de dégâts sur la prochaine attaque subie de 15% (coup critique : 20%)."
+          },
+          {
+            "nom": "Le Fragor",
+            "degats": 1075,
+            "vitesse": -300,
+            "type": "Semi-Légendaire",
+            "special": "Eboulement : En cas de Coup Critique, la cible ne tapera que 25% de ses dégâts, assommée."
+          },
+          {
+            "nom": "Le Roth",
+            "degats": 920,
+            "vitesse": -209,
+            "prix": 1500,
+            "type": "Craft",
+            "slotsArmes": 2
+          }
+        ]
+      },
+      {
+        "Boucliers": [
+          {
+            "nom": "Couvercle de tonneau",
+            "vitalite": 5,
+            "prix": 12,
+            "type": "Normale"
+          },
+          {
+            "nom": "Bouclier Voli",
+            "vitalite": 15,
+            "prix": 36,
+            "type": "Normale"
+          },
+          {
+            "nom": "Bambou'clier",
+            "vitalite": 45,
+            "prix": 108,
+            "type": "Normale"
+          },
+          {
+            "nom": "Bouclier de cristal",
+            "vitalite": 135,
+            "prix": 424,
+            "type": "Normale"
+          },
+          {
+            "nom": "Tate",
+            "vitalite": 120,
+            "special": "La valeur des Coups Critiques augmente de 20% ; Protéger l'honneur : Éléments de la panoplie Sonkei (plus d'informations dans le lien).",
+            "type": "Craft"
+          },
+          {
+            "nom": "Bouclier nordique",
+            "vitalite": 250,
+            "vitesse": -30,
+            "prix": 636,
+            "type": "Normale",
+            "special": "+10% de dégâts en cas de RP dans le Nord "
+          },
+          {
+            "nom": "Coeur de lion",
+            "vitalite": 260,
+            "type": "Normale",
+            "prix": 848
+          },
+          {
+            "nom": "Tomb'ouclier",
+            "vitalite": 350,
+            "vitesse": -75,
+            "type": "Exotique",
+            "special": "Résistant comme la roche : Augmente la vitalité à hauteur de 10 × le niveau du porteur."
+          },
+          {
+            "nom": "Kappa no Kumi",
+            "vitalite": 350,
+            "type": "Exotique",
+            "special": " Kappa no Kumi : 350 de vitalité ; la première attaque réussie sur vous est renvoyée à 25% à sa source. Non cumulable."
+          },
+          {
+            "nom": "La Triforce",
+            "vitalite": 405,
+            "prix": 1272,
+            "type": "Normale"
+          },
+          {
+            "nom": "Tashoklier",
+            "vitalite": 653,
+            "vitesse": -50,
+            "type": "Craft",
+            "special": "Peut être béni par une divinité djöllfuline"
+          },
+          {
+            "nom": "L'Eclat du Dragonnier",
+            "vitalite": 900,
+            "vitesse": -100,
+            "type": "Craft",
+            "prix:": 2000
+          },
+          {
+            "nom": "Targe de Melpména",
+            "vitalite": 0,
+            "type": "Exotique",
+            "special": "Bénédiction aqueuse : En début de combat, le porteur gagne (niveau x 25) en vitalité [Imblocable]."
+          },
+          {
+            "nom": "Le Bouclier sépulcral",
+            "vitalite": 1600,
+            "vitesse": -160,
+            "slotsArmes": 2,
+            "type": "Semi-Légendaire",
+            "special": "Le possesseur gagne 160 de vitalité et dégâts,/tour et renvoie 160 de dégâts à chaque attaque subie."
+          }
+        ]
+      }
+    ],
+    "armuresBases": [
+      {
+        "Armures légères": [
+          {
+            "nom": "Armure de cuir",
+            "vitalite": 10,
+            "vitesse": 3,
+            "prix": 12,
+            "type": "Normale"
+          },
+          {
+            "nom": "Airmure",
+            "vitalite": 30,
+            "vitesse": 10,
+            "prix": 36,
+            "type": "Normale"
+          },
+          {
+            "nom": "Cuirasse de Lierre",
+            "vitalite": 90,
+            "vitesse": 30,
+            "prix": 108,
+            "type": "Normale"
+          },
+          {
+            "nom": "Armure Wyverne",
+            "vitalite": 270,
+            "vitesse": 90,
+            "prix": 424,
+            "type": "Craft"
+          },
+          {
+            "nom": "Kusazuri",
+            "vitalite": 350,
+            "vitesse": 115,
+            "type": "Craft/Exotique",
+            "special": "Code d'honneur : Éléments de la panoplie Sonkei (plus d'informations dans le lien)"
+          },
+          {
+            "nom": "Kimono",
+            "vitalite": 530,
+            "vitesse": 170,
+            "type": "Exotique",
+            "special": " si vous êtes une classe furtive, vous pouvez utiliser l'attaque furtive. De plus, votre vitesse est augmentée de 25%."
+          },
+          {
+            "nom": "Plastron de vif-argent",
+            "vitalite": 540,
+            "vitesse": 180,
+            "prix": 848,
+            "type": "Craft"
+          },
+          {
+            "nom": "Hishularnais",
+            "vitalite": 675,
+            "vitesse": 225,
+            "special": "Peut être bénie par une divinité djöllfuline",
+            "type": "Craft"
+          },
+          {
+            "nom": "Armure d'Eskadi",
+            "vitalite": 810,
+            "vitesse": 270,
+            "prix": 1272,
+            "type": "Craft"
+          }
+        ]
+      },
+      {
+        "Armure intermédiaires": [
+          {
+            "nom": "Armure de fer",
+            "vitalite": 15,
+            "prix": 12,
+            "type": "Normale"
+          },
+          {
+            "nom": "Cuirasse de Pouk'ay Mon",
+            "vitalite": 45,
+            "prix": 36,
+            "type": "Normale"
+          },
+          {
+            "nom": "Armure Oseau",
+            "vitalite": 135,
+            "prix": 108,
+            "type": "Normale"
+          },
+          {
+            "nom": "Animarmure",
+            "vitalite": 405,
+            "prix": 424,
+            "type": "Craft"
+          },
+          {
+            "nom": "Tatali Dô",
+            "vitalite": 525,
+            "type": "Craft/Exotique",
+            "special": "Code d'honneur : Éléments de la panoplie Sonkei (plus d'informations dans le lien)"
+          },
+          {
+            "nom": "Bushi",
+            "vitalite": 800,
+            "type": "Exotique",
+            "special": "Si vous êtes une classe spéciale, tous vos effets sont augmentés de 25%."
+          },
+          {
+            "nom": "Robe de l'Archi-mage",
+            "vitalite": 777,
+            "type": "Exotique",
+            "special": "Si vous êtes une classe magique, vous pouvez effectuer deux actions par tour. (Réservé aux classes magiques)"
+          },
+          {
+            "nom": "Veste souillée de sang frais",
+            "vitalite": 700,
+            "type": "Exotique",
+            "special": "Sang frais : Tétanise les êtres superstitieux un tour sur deux (à commencer par le premier) mais rend les PNJ soupçonneux. Permet de lancer un dé 'Attaque - vampire' tous les deux tours (à commencer par le deuxième) mais rend vulnérable aux effets contre les vampires (le pieu par exemple) ; Élément de la panoplie de Lunatique de la Convergence."
+          },
+          {
+            "nom": "Armure de Mithril",
+            "vitalite": 810,
+            "prix": 848,
+            "type": "Craft"
+          },
+          {
+            "nom": "Cuirishui",
+            "vitalite": 1013,
+            "special": "Peut être bénie par une divinité djöllfuline",
+            "type": "Craft"
+          },
+          {
+            "nom": "Le Kenshin Uesugi",
+            "vitalite": 1215,
+            "prix": 1272,
+            "type": "Craft"
+          }
+        ]
+      },
+      {
+        "Armures lourdes": [
+          {
+            "nom": "Armure de plates",
+            "vitalite": 20,
+            "vitesse": -3,
+            "prix": 12,
+            "type": "Normale"
+          },
+          {
+            "nom": "Chrysarmuree",
+            "vitalite": 60,
+            "vitesse": -10,
+            "prix": 36,
+            "type": "Normale"
+          },
+          {
+            "nom": "Plastron du Chêne",
+            "vitalite": 180,
+            "vitesse": -30,
+            "prix": 108,
+            "type": "Normale"
+          },
+          {
+            "nom": "Armure Hyno",
+            "vitalite": 540,
+            "vitesse": -90,
+            "prix": 424,
+            "type": "Craft"
+          },
+          {
+            "nom": "Tatami katabira",
+            "vitalite": 700,
+            "vitesse": -115,
+            "type": "Craft/Exotique",
+            "special": "Code d'honneur : Éléments de la panoplie Sonkei (plus d'informations dans le lien)"
+          },
+          {
+            "nom": "Rhi Kantoné",
+            "vitalite": 1070,
+            "vitesse": -170,
+            "type": "Exotique",
+            "special": "Si vous êtes une classe aventurière, les dégâts subis sont réduits de 50% (et 25% pour les protecteurs)"
+          },
+          {
+            "nom": "Armure d'orichalque",
+            "vitalite": 1080,
+            "vitesse": -180,
+            "prix": 848,
+            "type": "Craft"
+          },
+          {
+            "nom": "Plastra",
+            "vitalite": 1350,
+            "vitesse": -225,
+            "special": "Peut être bénie par une divinité djöllfuline",
+            "type": "Craft"
+          },
+          {
+            "nom": "Armure de Havel",
+            "vitalite": 1620,
+            "vitesse": -270,
+            "prix": 1272,
+            "type": "Craft"
+          }
+        ]
+      }
+    ],
+    "casquesBases": [
+      {
+        "nom": "Casque rouillé",
+        "vitalite": 5,
+        "prix": 12,
+        "type": "Normale"
+      },
+      {
+        "nom": "Casque Wilfish",
+        "vitalite": 15,
+        "prix": 36,
+        "type": "Normale"
+      },
+      {
+        "nom": "Coiffe feuillue",
+        "vitalite": 45,
+        "prix": 108,
+        "type": "Normale"
+      },
+      {
+        "nom": "Haume Hygal",
+        "vitalite": 135,
+        "prix": 424,
+        "type": "Craft"
+      },
+      {
+        "nom": "Kabuto",
+        "vitalite": 180,
+        "type": "Exotique",
+        "special": "Point d'honneur : Éléments de la panoplie Sonkei (plus d'informations dans le lien)"
+      },
+      {
+        "nom": "Capuche sombre",
+        "vitalite": 195,
+        "vitesse": -30,
+        "type": "Exotique",
+        "special": " Incognito : Les autorités (factions) ne savent pas qui vous êtes si vous réalisez un RP dans leur zone de contrôle. Si vous déclarez ouvertement votre identité ou si un membre de la faction fait un RP dans la même zone, alors vous serez connu de tous. Un guetteur de faction peut s'incruster dans le RP et découvrir votre identité pour ramener ses alliés."
+      },
+      {
+        "nom": "Chapeau pointu",
+        "vitalite": 220,
+        "vitesse": -30,
+        "type": "Exotique",
+        "special": "Sorcellerie : Augmente les effets des remèdes et des poisons de 50% sur les êtres superstitieux. Permet d'utiliser deux potions tous les deux tours (à commencer par le deuxième) et permet de distiller des potions de niveau 'novice' ; Élément de la panoplie de Lunatique de la Convergence."
+      },
+      {
+        "nom": "Casque en diamant",
+        "vitalite": 260,
+        "prix": 848,
+        "type": "Craft"
+      },
+      {
+        "nom": "Torasque",
+        "vitalite": 328,
+        "type": "Craft",
+        "special": "Peut être béni par une divinité djöllfuline"
+      },
+      {
+        "nom": "Coiffe dùralassienne",
+        "vitalite": 350,
+        "type": "Exotique",
+        "special": "La première attaque réussie sur vous est réduite de 25% [Portable par tout le monde]"
+      },
+      {
+        "nom": "Casque de Dovakin",
+        "vitalite": 405,
+        "prix": 1272,
+        "type": "Craft"
+      },
+      {
+        "nom": "Diadème de la liche",
+        "vitalite": 50,
+        "type": "Semi-légendaire",
+        "special": "Permet de porter deux artefacts exotiques à la fois [Imblocable] [Portable par tout le monde]"
+      }
+    ],
+    "bottesBases": [
+      {
+        "nom": "Sandales/Fers à chêvre",
+        "vitesse": 18,
+        "prix": 15,
+        "type": "Normale"
+      },
+      {
+        "nom": "Bottes de cuir/Fers à cheval",
+        "vitesse": 36,
+        "prix": 45,
+        "type": "Normale"
+      },
+      {
+        "nom": "Kikourvit/Fers à Ry",
+        "vitesse": 54,
+        "prix": 95,
+        "type": "Normale"
+      },
+      {
+        "nom": " Bot'aria/Fers Rossïnge",
+        "vitesse": 72,
+        "prix": 150,
+        "type": "Normale"
+      },
+      {
+        "nom": "Bottes Lapi-lazuli/Fers en diamant",
+        "vitesse": 108,
+        "type": "Normale"
+      },
+      {
+        "nom": "Kôkage",
+        "vitesse": 100,
+        "type": "Craft/Exotique",
+        "prix": 600,
+        "special": "Marche pour l'honneur : Éléments de la panoplie Sonkei (plus d'informations dans le lien)"
+      },
+      {
+        "nom": "Les Griffones/Fers Oce",
+        "vitesse": 126,
+        "type": "Normale"
+      },
+      {
+        "nom": "Geta",
+        "vitesse": 135,
+        "type": "Exotique",
+        "special": "Bonus de vitesse ennemi annulé au premier tour où vous subissez des dégâts dus à une attaque. [Portable par tout le monde]"
+      },
+      {
+        "nom": "Fers d'évadé",
+        "vitesse": 100,
+        "type": "Exotique",
+        "special": "La mort aux trousses : Augmente la vitesse de 100 à chaque CR/CC mais la diminue de 50 à chaque EC. Réduit la vitesse de 25%/tour chez les êtres superstitieux tous les deux tours mais rend les PNJ soupçonneux. En cas de défaite, évite la prison ; Élément de la panoplie de Lunatique de la Convergence."
+      },
+      {
+        "nom": " Bottes de Sept Lieues/Fers de Firenze",
+        "vitesse": 144,
+        "prix": 1070,
+        "type": "Normale"
+      },
+      {
+        "nom": "Bottes/Fers Tungsténien(ne)s",
+        "vitesse": 300,
+        "prix": 2200,
+        "type": "Craft"
+      },
+      {
+        "nom": "Chausses de la Liche",
+        "vitesse": 50,
+        "type": "Semi-légendaire",
+        "special": "Permet d'effectuer une action supplémentaire par tour. [Imblocable] [Portable par tout le monde]"
+      }
+    ],
+    "artefacts": []
+  }
+}
