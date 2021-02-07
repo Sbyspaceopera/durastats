@@ -13,12 +13,15 @@ Plus d'informations concernant ReactJs [ici](https://fr.reactjs.org/).
 ### ChartJs (react-chartjs-2)
 
 Plus d'informations concernant ChartJs [ici](https://www.chartjs.org/).
+
 Plus d'informations concernant react-chartjs-2 [ici](https://www.chartjs.org/).
 
 ### Redux (react-redux & react-redux-thunk)
 
 Plus d'informations concernant Redux [ici](https://redux.js.org/).
+
 Plus d'informations concernant react-redux [ici](https://react-redux.js.org/).
+
 Plus d'informations concernant react-redux-thunk [ici](https://github.com/reduxjs/redux-thunk).
 
 ### Material UI
