@@ -2,39 +2,51 @@ import React from 'react'
 import { 
     Typography, 
     Container, 
-    Accordion, 
-    AccordionSummary, 
-    AccordionDetails
+    Card,
+    CardContent,
+    AppBar,
+    Grid
 } from '@material-ui/core';
+
+import EqualizerIcon from '@material-ui/icons/Equalizer';
 
 const Header =()=> {
 
     return (
-        <Container>
-            <Typography variant='h1'>
-                Dùrastats
-            </Typography>
+        <React.Fragment>
+            <AppBar position="static" fontStyle="italic">
+                <Grid container alignItems="center" alignContent="center" justify="center">
+                    <Grid item>
+                        <EqualizerIcon fontSize="large" />
+                    </Grid>
+                    <Grid item>
+                        <Typography variant="h2">
+                            Dùrastats
+                        </Typography>
+                    </Grid>
+                </Grid>
+            </AppBar>
 
-            <Accordion>
-                <AccordionSummary>
-                    <Typography variant="h6">
-                        A venir
-                    </Typography>
-                </AccordionSummary>
-                <AccordionDetails variant='p'>
-                    <ul>
-                        <li>Classes furtives</li>
-                        <li>Montures/Familiers/Compagnons</li>
-                        <li>Artefacts</li>
-                        <li>Mise en forme</li>
-                    </ul>
-                </AccordionDetails>
-                        
-        
+            <Container>
                 
-            </Accordion>
-            
-        </Container>
+                <Card>
+                    <CardContent>
+                        <Typography variant="h6">
+                            A venir
+                        </Typography>
+                    
+                        <ul>
+                            <li>Classes furtives</li>
+                            <li>Montures/Familiers/Compagnons</li>
+                            <li>Artefacts</li>
+                            <li>Mise en forme</li>
+                        </ul>
+                        </CardContent>
+                                
+                </Card>
+                
+            </Container>
+        </React.Fragment>
     )
 }
 

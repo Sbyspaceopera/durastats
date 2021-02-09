@@ -4,16 +4,16 @@ import Header from './Header'
 import Form from './Form'
 import Chart from './Chart'
 
-import {Container} from '@material-ui/core'
+import { Box} from '@material-ui/core'
 
 const App = () => {
 
     return (
-        <Container>
+        <Box>
             <Header />
             <Form />
             <Chart />
-        </Container>
+        </Box>
         
     )
 }
