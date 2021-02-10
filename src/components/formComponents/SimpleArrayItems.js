@@ -1,5 +1,5 @@
 import React from "react"
-
+import { useTheme } from '@material-ui/core/styles';
 import {
     Select,
     InputLabel,
@@ -9,11 +9,27 @@ import {
 
 const SimpleArrayItems = (props) =>{
     const {datas, item, toggleItem, label} = props
+    const theme = useTheme()
 
+
+    const styleCondition = (item) => {
+        switch(item.type){
+          case "Craft/Exotique":
+            return theme.palette.Exotique
+          case "Exotique":
+            return theme.palette.Exotique
+          case "Semi-Légendaire":
+            return theme.palette[item.type]
+          default:
+            return theme.palette.couleurText
+        }
+      }
 
     const renderItems = (datas) => {
         return datas.map(item => {
-            return <option key={item.nom} value={item.nom}>
+            return <option key={item.nom} value={item.nom}
+            style={styleCondition(item)}
+            >
                 {`${item.nom} => ${item.degats ? "Dégats:" + item.degats + "; " : ""}${item.vitalite ? "Vitalité:" + item.vitalite + "; " : ""}${item.vitesse ? "Vitesse:" + item.vitesse + "; " : ""}${item.prix ? "Prix:" + item.prix + "po;" : ""}`}
             </option>
         })
@@ -43,8 +59,9 @@ const SimpleArrayItems = (props) =>{
             <Select native onChange={(event) => handleItems(event, toggleItem)}
             id={label}
             value={item.nom? item.nom : "disarmed"}
+            style={theme.palette[item.type]}
             >
-                <option value="disarmed" >
+                <option value="disarmed">
                     -
                 </option>
                 {renderItems(datas)}

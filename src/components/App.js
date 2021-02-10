@@ -11,8 +11,11 @@ const App = () => {
     return (
         <Box>
             <Header />
-            <Form />
-            <Chart />
+            <Box display="flex">
+                <Form />
+                <Chart />
+            </Box>
+            
         </Box>
         
     )

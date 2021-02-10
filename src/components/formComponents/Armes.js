@@ -1,5 +1,5 @@
-import React from 'react'
-
+import React, {useState} from 'react'
+import { useTheme } from '@material-ui/core/styles';
 import {
     Select,
     InputLabel,
@@ -9,6 +9,8 @@ import {
 
 const Armes = (props) =>{
     const {datas, classe, totaux, armes, weaponsArray, disarmed, toggleWeapon} = props
+    const theme = useTheme()
+    const [colorsObject, setColorsObject] =useState() 
 
     const renderWeapons = (datas, indexSelect) => {
         const jsonToArray = datas.map((data) => {
@@ -18,6 +20,19 @@ const Armes = (props) =>{
         return jsonToArray.map((weaponsOrOptGroupArg) => {
           const weaponsOrOptGroup = weaponsOrOptGroupArg[0];
           const options = weaponsOrOptGroup[1].map((weapon) => {
+            //const styleCondition = weapon.type !== ("Normale" || "Craft/Exotique") ? theme.palette[weapon.type] : (weapon.type === "Craft/Exotique" ? theme.palette.Exotique : ( weapon.type ===  "Craft"  ? theme.palette.couleurText : theme.palette.couleurText))
+            const styleCondition = (weapon) => {
+              switch(weapon.type){
+                case "Craft/Exotique":
+                  return theme.palette.Exotique
+                case "Exotique":
+                  return theme.palette.Exotique
+                case "Semi-Légendaire":
+                  return theme.palette[weapon.type]
+                default:
+                  return theme.palette.couleurText
+              }
+            }
             if (armes.length) {
               if (armes.find(arme => arme.slot === indexSelect)) {
                 const armePrecedente = armes.find(arme => arme.slot === indexSelect)
@@ -25,6 +40,7 @@ const Armes = (props) =>{
                 return <option disabled={disabledCondition}
                   key={weapon.nom}
                   value={weapon.nom}
+                  style={styleCondition(weapon)}
                 >
                   {`${weapon.nom}${weapon.slotsArmes ? " (2 mains)" : ""} => ${weapon.degats ? "Dégats:" + weapon.degats + "; " : ""}${weapon.vitesse ? "Vitesse:" + weapon.vitesse + "; " : ""}${weapon.vitalite ? "Vitalité:" + weapon.vitalite + "; " : ""}${weapon.prix ? "Prix:" + weapon.prix + "po;" : ""}`}
                 </option>
@@ -32,6 +48,7 @@ const Armes = (props) =>{
                 const disabledCondition = totaux.slots + (weapon.slotsArmes ? weapon.slotsArmes : 1) > classe.slotsArmes ? true : false
                 return <option disabled={disabledCondition}
                   key={weapon.nom} value={weapon.nom}
+                  style={styleCondition(weapon)}
                 >
                   {`${weapon.nom}${weapon.slotsArmes ? " (2 mains)" : ""} => ${weapon.degats ? "Dégats:" + weapon.degats + "; " : ""}${weapon.vitesse ? "Vitesse:" + weapon.vitesse + "; " : ""}${weapon.vitalite ? "Vitalité:" + weapon.vitalite + "; " : ""}${weapon.prix ? "Prix:" + weapon.prix + "po;" : ""}`}
                 </option>
@@ -40,6 +57,7 @@ const Armes = (props) =>{
               const disabledCondition = totaux.slots + (weapon.slotsArmes ? weapon.slotsArmes : 1) > classe.slotsArmes ? true : false
               return <option disabled={disabledCondition}
                 key={weapon.nom} value={weapon.nom}
+                style={styleCondition(weapon)}
               >
                 {`${weapon.nom}${weapon.slotsArmes ? " (2 mains)" : ""} => ${weapon.degats ? "Dégats:" + weapon.degats + "; " : ""}${weapon.vitesse ? "Vitesse:" + weapon.vitesse + "; " : ""}${weapon.vitalite ? "Vitalité:" + weapon.vitalite + "; " : ""}${weapon.prix ? "Prix:" + weapon.prix + "po;" : ""}`}
               </option>
@@ -49,7 +67,7 @@ const Armes = (props) =>{
     
           return (
             <React.Fragment>
-              <optgroup key={weaponsOrOptGroup[0]} label={weaponsOrOptGroup[0]}>
+              <optgroup style={theme.palette.blanc} key={weaponsOrOptGroup[0]} label={weaponsOrOptGroup[0]}>
                 {options}
               </optgroup>
             </React.Fragment>
@@ -59,14 +77,25 @@ const Armes = (props) =>{
 
     const handleWeapon = (event) => {
         const keySelect = event.target.getAttribute("id")
-    
+        
+
         if (event.target.value === "disarmed"){
           return disarmed(keySelect)
         }
     
         const nomArme = event.target.value;
         const checkNom = (weaponObject) => {
-          return weaponObject.nom === nomArme ? toggleWeapon(weaponObject, keySelect) : null;
+          if (weaponObject.nom === nomArme){
+            let colorObject = {};
+            colorObject[keySelect] = weaponObject.type;
+            console.log("check")
+            setColorsObject({...colorsObject,  ...colorObject})
+            console.log(colorsObject)
+            return toggleWeapon(weaponObject, keySelect)
+          }else{
+            return null;
+          }
+          
         };
     
         weaponsArray.forEach((element) => {
@@ -79,6 +108,7 @@ const Armes = (props) =>{
         let components = []
     
         for (let index = 0; index < slotsClasse; index++) {
+    
           components.push(
             <FormControl key={index}>
               <InputLabel id="armes">Armes</InputLabel>
@@ -87,13 +117,14 @@ const Armes = (props) =>{
                 labelId="label"
                 id={index}
                 onChange={(event) => handleWeapon(event)}
+                style={colorsObject ? theme.palette[colorsObject[index]] ? theme.palette[colorsObject[index]]: null  :null }
               >
                 <option value="disarmed" selected={!armes.length? true: false}>
                 -
               </option>
                 {renderWeapons(datas, index)}
               </Select>
-              <FormHelperText>{`Slots d'armes disponibles : ${classe.slotsArmes - totaux.slots}`}</FormHelperText>
+              <FormHelperText>{"test"}</FormHelperText>
             </FormControl>
           )
         }

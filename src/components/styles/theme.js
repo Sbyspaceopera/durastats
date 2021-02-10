@@ -1,6 +1,5 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 
-
 const theme = createMuiTheme({
     palette: {
         common: {
@@ -8,12 +7,12 @@ const theme = createMuiTheme({
             white: "#fff"
         },
         background: {
-            paper: "#2C1D00",
+            paper: "#1A1209",
             default: "#000"
         },
         primary: {
             light: "#4A4A4A",
-            main: "#2C1D00",
+            main: "#1A1209",
             dark: "#303f9f",
             contrastText: "#DBCCA8"
         },
@@ -34,7 +33,25 @@ const theme = createMuiTheme({
             secondary: "#fff",
             disabled: "#DBCCA8",
             hint: "#DBCCA8"
-        }
+        },
+        Humain:{color:"#FC0000"},
+        Abyssal : {color: "#0091FF"},
+        Djöllfulin : {color: "#FF2D00"},
+        Elfe : {color: "#0C8A1F"},
+        Géant : {color: "#D9D923"},
+        Hybride : {color: "#4D3A1A"},
+        Thérianthrope : {color: "#AD6A05"},
+        Naga : {color: "#9326C9"},
+        Nain : {color:"#2B2BC2"},
+        "Peau-verte" : {color: "#024F23"},
+        "Stryge Blanc" : {color: "#FCFCFC"},
+        "Stryge Noir" : {color: "#3D3D3D"},
+        Vampire: {color: "#A10000"},
+        "Semi-Légendaire" : {color: "#DAA500"},
+        "Exotique" : {color: "#0FF"},
+        blanc: {color: "#fff"},
+        couleurText: {color:"#DBCCA8"}
+
     },
     typography: {
         fontFamily: "'Philosopher', sans-serif;",

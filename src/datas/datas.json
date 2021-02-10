@@ -2260,7 +2260,7 @@
       {
         "nom": "Diadème de la liche",
         "vitalite": 50,
-        "type": "Semi-légendaire",
+        "type": "Semi-Légendaire",
         "special": "Permet de porter deux artefacts exotiques à la fois [Imblocable] [Portable par tout le monde]"
       }
     ],
@@ -2333,7 +2333,7 @@
       {
         "nom": "Chausses de la Liche",
         "vitesse": 50,
-        "type": "Semi-légendaire",
+        "type": "Semi-Légendaire",
         "special": "Permet d'effectuer une action supplémentaire par tour. [Imblocable] [Portable par tout le monde]"
       }
     ],

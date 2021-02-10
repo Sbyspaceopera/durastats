@@ -48,7 +48,7 @@ const Form = (props) => {
 
   return (
     <Container>
-      <Race datas={datas} race={race} renderOptions={renderOptions} toggleRace={toggleRace}/>
+      <Race datas={datas} race={race} toggleRace={toggleRace}/>
       {race.nom? (<Classe datas={datas} classe={classe} renderOptions={renderOptions} toggleClasse={toggleClasse} toggleSlots={toggleSlots} />) : null}
       {classe.nom ? (
         <React.Fragment>
