@@ -1,4 +1,5 @@
 import { createMuiTheme } from '@material-ui/core/styles';
+import bodyBackgroundImg from '../../img/bodyBackgroundImg.jpg'
 
 const theme = createMuiTheme({
     palette: {
@@ -50,11 +51,27 @@ const theme = createMuiTheme({
         "Semi-Légendaire" : {color: "#DAA500"},
         "Exotique" : {color: "#0FF"},
         blanc: {color: "#fff"},
-        couleurText: {color:"#DBCCA8"}
+        couleurText: {color:"#DBCCA8"},
+        Normale : {color: "#DBCCA8"},
+        "Craft/Exotique" : {color : "0FF"},
+        backgroundColorApp : {backgroundColor: "#000", width:"55%"}
 
     },
     typography: {
         fontFamily: "'Philosopher', sans-serif;",
+    },
+    overrides: {
+        MuiCssBaseline: {
+          '@global': {
+            body: {
+              backgroundImage: `url(${bodyBackgroundImg})`,
+              backgroundRepeatX:'no-repeat',
+              backgroundReapeatY:"repeat",
+              backgroundSize:'cover',
+              backgroundPosition:"center",
+            }
+          },
+        }
     }
 })
 

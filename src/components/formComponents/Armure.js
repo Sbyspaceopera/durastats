@@ -14,9 +14,7 @@ const Armure = (props) => {
     });
     const theme = useTheme()
 
-    const renderArmures = () => {
-        
-        const styleCondition = (armure) => {
+    const styleCondition = (armure) => {
                     switch(armure.type){
                       case "Craft/Exotique":
                         return theme.palette.Exotique
@@ -28,6 +26,10 @@ const Armure = (props) => {
                         return theme.palette.couleurText
                     }
                   }
+
+    const renderArmures = () => {
+        
+        
 
         return jsonToArray.map((data) => {
             const options = data[0][1].map(armure =>{
@@ -71,7 +73,7 @@ const Armure = (props) => {
             <Select native onChange={(event) => handleArmure(event)}
             id="armure"
             value={armure.nom? armure.nom : "disarmed"}
-            style={theme.palette[armure.type]}
+            style={styleCondition(armure)}
             >
                 <option value="disarmed" >
                     -

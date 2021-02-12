@@ -41,14 +41,12 @@ const SimpleArrayItems = (props) =>{
         }
       
           const nomItem = event.target.value;
-          console.log(nomItem)
           const checkNom = (itemObject) => {
 
             return itemObject.nom === nomItem ? toggleItem(itemObject) : null;
           };
       
           datas.forEach((itemObject) => {
-              console.log(itemObject)
             checkNom(itemObject)
           });
     } 

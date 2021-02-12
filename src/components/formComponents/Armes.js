@@ -88,9 +88,7 @@ const Armes = (props) =>{
           if (weaponObject.nom === nomArme){
             let colorObject = {};
             colorObject[keySelect] = weaponObject.type;
-            console.log("check")
             setColorsObject({...colorsObject,  ...colorObject})
-            console.log(colorsObject)
             return toggleWeapon(weaponObject, keySelect)
           }else{
             return null;

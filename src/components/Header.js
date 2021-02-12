@@ -7,31 +7,33 @@ import {
     AppBar,
     Grid
 } from '@material-ui/core';
-
+import { useTheme } from '@material-ui/core/styles';
 import EqualizerIcon from '@material-ui/icons/Equalizer';
 
 const Header =()=> {
 
+    const theme = useTheme()
+
     return (
-        <React.Fragment>
-            <AppBar position="static" fontStyle="italic">
-                <Grid container alignItems="center" alignContent="center" justify="center">
+        <header height="25%">
+            <AppBar position="static" elevation={30} sx={{borderBottom:1, borderColor: theme.palette.text.primary}}>
+                <Grid container justify="center" alignItems="flex-end">
                     <Grid item>
-                        <EqualizerIcon fontSize="large" />
+                        <EqualizerIcon style={{...theme.palette.blanc, fontSize : 50}} />
                     </Grid>
                     <Grid item>
-                        <Typography variant="h2">
+                        <Typography variant="h2" style={{...theme.palette.blanc, lineHeight:"60px"}}>
                             Dùrastats
                         </Typography>
                     </Grid>
                 </Grid>
             </AppBar>
 
-            <Container>
+            <Container style={{backgroundColor: theme.palette.background.paper, width: "55%"}}>
                 
                 <Card>
                     <CardContent>
-                        <Typography variant="h6">
+                        <Typography variant="h6" style={theme.palette.blanc}>
                             A venir
                         </Typography>
                     
@@ -46,7 +48,7 @@ const Header =()=> {
                 </Card>
                 
             </Container>
-        </React.Fragment>
+        </header>
     )
 }
 
