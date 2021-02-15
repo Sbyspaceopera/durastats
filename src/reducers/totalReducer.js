@@ -16,10 +16,7 @@ const totalReducer = (state= INITIAL_STATE, action) =>{
                 ...state, 
                 vitalite: action.payload.race.vitalite 
                     + (action.payload.classe.nom ? (action.payload.classe.stats.vitalite*action.payload.level-5) + 20 : 0)
-                    + (action.payload.level >9 ? 100 : 0)
-                    + (action.payload.level >19 ? 200 : 0)
-                    + (action.payload.level >29 ? 300 : 0)
-                    + (action.payload.level >39 ? 400 : 0)
+                    + ((Math.floor(action.payload.level/10)+1)/2)*(0+(Math.floor(action.payload.level/10)*100))
                     + (action.payload.armes.length ?
                         action.payload.armes.map(arme => {
                             return arme.arme.vitalite ? parseInt(arme.arme.vitalite,10) :0
