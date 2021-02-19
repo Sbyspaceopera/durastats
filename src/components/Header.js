@@ -16,7 +16,7 @@ const Header =()=> {
 
     return (
         <header height="25%">
-            <AppBar position="static" elevation={30} sx={{borderBottom:1, borderColor: theme.palette.text.primary}}>
+            <AppBar position="static" elevation={30} sx={{borderBottom:1, borderColor: theme.palette.text.primary}} style={{boxShadow:"inset 0 -4px 5px -4px #422a12"}}>
                 <Grid container justify="center" alignItems="flex-end">
                     <Grid item>
                         <EqualizerIcon style={{...theme.palette.blanc, fontSize : 50}} />
