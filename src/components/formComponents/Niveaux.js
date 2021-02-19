@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 
 import {
     TextField,
@@ -7,31 +7,40 @@ import {
 
 const Niveaux = (props) =>{
     const {level, toggleLevel} = props
+    const [debouncedLevel, setDebouncedLevel] = useState(5)
 
-    const handleLevel = (event) => {
-      if (event.target.value < 5) {
-        toggleLevel(5);
-      } else if (event.target.value > 60) {
-        toggleLevel(60);
-      } else {
-        toggleLevel(event.target.value);
+    useEffect(() => {
+      const timeOutLevel = setTimeout(() => {
+          if (debouncedLevel < 5) {
+          toggleLevel(5);
+        } else if (debouncedLevel > 60) {
+          toggleLevel(60);
+        } else {
+          toggleLevel(debouncedLevel);
+        }
+      }, 2000);
+      return () => {
+        clearTimeout(timeOutLevel)
       }
-    };
+    }, [debouncedLevel, toggleLevel])
+
+    useEffect(() => {
+      setDebouncedLevel(level)
+    }, [level])
+
 
     return(
       <FormControl>
         <TextField
-          onChange={(event) => handleLevel(event)}
+          onChange={event => setDebouncedLevel(event.target.value)}
           id="level"
           type="number"
           label="Niveau"
-          value={level}
+          value={debouncedLevel}
           InputProps={{ inputProps: { max: 60, min: 5 } }}
         />
       </FormControl>
     )
-    
-    
 }
 
 export default Niveaux
