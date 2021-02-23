@@ -122,11 +122,11 @@ const Armes = (props) =>{
               </Select>
               <FormHelperText>
                 {
-                  armes.find(arme => arme.slot === index) && armes.find(arme => arme.slot === index).arme.pecial
+                  armes.find(arme => arme.slot === index) && armes.find(arme => arme.slot === index).arme.special
                   ?
-                  "true"
+                  (armes.find(arme => arme.slot === index)).arme.special
                   :
-                  "false"
+                  ""
                 }
               </FormHelperText>
             </FormControl>
