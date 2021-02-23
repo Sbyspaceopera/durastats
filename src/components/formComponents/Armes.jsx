@@ -10,7 +10,7 @@ import {
 const Armes = (props) =>{
     const {datas, classe, totaux, armes, weaponsArray, disarmed, toggleWeapon} = props
     const theme = useTheme()
-    const [colorsObject, setColorsObject] =useState() 
+    const [colorsObject, setColorsObject] = useState()
 
     const renderWeapons = (datas, indexSelect) => {
         const jsonToArray = datas.map((data) => {
@@ -20,7 +20,6 @@ const Armes = (props) =>{
         return jsonToArray.map((weaponsOrOptGroupArg) => {
           const weaponsOrOptGroup = weaponsOrOptGroupArg[0];
           const options = weaponsOrOptGroup[1].map((weapon) => {
-            //const styleCondition = weapon.type !== ("Normale" || "Craft/Exotique") ? theme.palette[weapon.type] : (weapon.type === "Craft/Exotique" ? theme.palette.Exotique : ( weapon.type ===  "Craft"  ? theme.palette.couleurText : theme.palette.couleurText))
             const styleCondition = (weapon) => {
               switch(weapon.type){
                 case "Craft/Exotique":
@@ -106,7 +105,6 @@ const Armes = (props) =>{
         let components = []
     
         for (let index = 0; index < slotsClasse; index++) {
-    
           components.push(
             <FormControl key={index}>
               <InputLabel id="armes">Armes</InputLabel>
@@ -122,7 +120,15 @@ const Armes = (props) =>{
               </option>
                 {renderWeapons(datas, index)}
               </Select>
-              <FormHelperText>{"test"}</FormHelperText>
+              <FormHelperText>
+                {
+                  armes.find(arme => arme.slot === index) && armes.find(arme => arme.slot === index).arme.pecial
+                  ?
+                  "true"
+                  :
+                  "false"
+                }
+              </FormHelperText>
             </FormControl>
           )
         }

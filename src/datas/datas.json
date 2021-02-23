@@ -2337,6 +2337,152 @@
         "special": "Permet d'effectuer une action supplémentaire par tour. [Imblocable] [Portable par tout le monde]"
       }
     ],
-    "artefacts": []
+    "artefacts": [
+      {
+        "nom": "Pendentif printanier",
+        "special":"Le porteur de ce pendentif voit sa vitalité, ses dégâts, et sa vitesse augmenter de 10% s'il fait un RP dans l'Ouest de Dùralas (voir les catégories). Donne le titre de 'Bûcheron/ne invétéré(e)'.",
+        "type": "Exotique"
+      },
+      {
+        "nom": "Pendentif estival",
+        "special":"Le porteur de ce pendentif voit sa vitalité, ses dégâts, et sa vitesse augmenter de 10% s'il fait un RP dans le Centre de Dùralas (voir les catégories). Donne le titre de 'Forgeron/ne invétéré(e).'",
+        "type": "Exotique"
+      },
+      {
+        "nom": "Pendentif automnal",
+        "special":"Le porteur de ce pendentif voit sa vitalité, ses dégâts, et sa vitesse augmenter de 10% s'il fait un RP dans le Sud de Dùralas (voir les catégories ; ne comprend ni les Mers & Océans, ni Wystéria). Donne le titre de 'Sculpteur/trice invétéré(e)'.",
+        "type": "Exotique"
+      },
+      {
+        "nom": "Pendentif hivernal",
+        "special":"Le porteur de ce pendentif voit sa vitalité, ses dégâts, et sa vitesse augmenter de 10% s'il fait un RP dans l'Est de Dùralas (voir les catégories). Donne le titre de 'Mineur/se invétéré(e)'.",
+        "type": "Exotique"
+      },
+      {
+        "nom": "Pendentif crépusculaire",
+        "special":"Le porteur de ce pendentif voit sa vitalité, ses dégâts, et sa vitesse augmenter de 10% s'il fait un RP dans le Nord de Dùralas (voir les catégories). Donne le titre de 'Chasseur/se invétéré(e)'.",
+        "type": "Exotique"
+      },
+      {
+        "nom": "Pierre de résurrection",
+        "special":"Si au bout d'un tour quelconque le porteur de la Pierre de résurrection est censé être K.O, il lui reste un point de vie. Donne le titre de 'Immortel'.",
+        "type": "Exotique"
+      },
+      {
+        "nom": "Cape d'invisibilté",
+        "special":"Les 2 premiers tours d'un combat, le joueur est immunisé car invisible : un joueur le touche en faisant un CC, et les créatures doivent avoir 2x sa vitesse pour le toucher. Après les 2 tours, l'effet prend fin. Donne le titre de 'Invisible'.",
+        "type": "Exotique"
+      },
+      {
+        "nom": "Pendentif de Wystéria",
+        "special":"Le porteur de ce pendentif voit sa vitalité, ses dégâts, et sa vitesse augmenter de 20% s'il fait un RP dans les Mers & Océans et à Wystéria (voir les catégories). Donne le titre de 'Wystérien(ne) invétéré(e)'.",
+        "type": "Exotique"
+      },
+      {
+        "nom": "Boucle d'oreille droite de Sire Ümmen",
+        "special":"Les personnages ennemis de sexe féminin perdent tous 20%/stats au début du combat (en PvM, il suffit de savoir si l'on dit 'le' ou 'la'). Donne le titre de 'Misogyne'.",
+        "type": "Exotique"
+      },
+      {
+        "nom": "Boucle d'oreille gauche de Sire Ümmen",
+        "special":"Les personnages ennemis de sexe masculin perdent tous 20%/stats au début du combat (en PvM, il suffit de savoir si l'on dit 'le' ou 'la'). Donne le titre de 'Misandre'.",
+        "type": "Exotique"
+      },
+      {
+        "nom": "Bague de Sire Ümmen",
+        "special":"Les ennemis ayant au moins 2 capacités spéciales (activées ou pas), perdent 15%/stats/tour. Donne le titre de 'Castrateur/trice'.",
+        "type": "Exotique"
+      },
+      {
+        "nom": "Appeau ancestral",
+        "special":"Augmente les statistiques et les effets de la monture/familier de 100% et de 50 % pour le compagnon (qui copiera donc 75 % des statistiques du porteur au lieu de 50 %). Si vous êtes un Dragonnier d'or et + de la Guilde des Dragonniers, ce % est porté à 125% pour une monture/familier et 75% pour un compagnon. Donne le titre de 'Maître/sse des bêtes'.",
+        "type": "Exotique"
+      },
+      {
+        "nom": "Pendentif Dùralassien",
+        "special":"Les stats sont automatiquement augmentées de 50% en début de combat. Donne le titre de 'Dùralassien(ne) invétéré(e)'.",
+        "type": "Exotique"
+      },
+      {
+        "nom": "Petit guide de l'apprenti alchimiste",
+        "special":"Les effets des Potions utilisées sont multipliés par deux. [Blocable] / De plus, les stats du joueur sont augmentées de 10% en début de combat. [Imblocable] / Enfin, le détenteur du Petit guide de l'apprenti alchimiste peut crafter les potions et les subterfuges du niveau débutant. Donne le titre 'Alchimiste'.",
+        "type": "Exotique"
+      },
+      {
+        "nom": "Friandise de maïs",
+        "special":" ??? Donne le titre de 'Hyperglycémique'.",
+        "type": "Exotique"
+      },
+      {
+        "nom": "Seringue d'insuline (ou presque...)",
+        "special":" ??? Donne le titre de 'Drogué'.",
+        "type": "Exotique"
+      },
+      {
+        "nom": "Eau de Jouvence",
+        "special":"Le joueur gagne 20% de sa vitalité/tour. Donne le titre de 'Jeunesse éternelle'",
+        "type": "Semi-Légendaire"
+      },
+      {
+        "nom": "Pierre philosophale",
+        "special":"L'équipe du possesseur de la pierre (lui compris) gagne 300 de vitalité et de vitesse/tour. Donne le titre de 'Alchimiste altruiste'.",
+        "type": "Semi-Légendaire"
+      },
+      {
+        "nom": "Draupnir",
+        "special":"Permet de créer un double exact de soi (statistiques seulement). En contrepartie, le possesseur perd 33% de sa vitalité. S'il est tué, le double disparaît. Donne le titre de 'Maître(sse) des clones'.",
+        "type":"Semi-Légendaire"
+      },
+      {
+        "nom": "Ceinture de Megingjord",
+        "special":"Donne 1 emplacement supplémentaire dans l'inventaire d'armes, peu importe la classe. Donne le titre de 'Surhumain(e)'.",
+        "type":"Semi-Légendaire"
+      },
+      {
+        "nom": "Grähale",
+        "special":" +1250 de vitalité. Donne le titre de 'Solide'.",
+        "type":"Semi-Légendaire"
+      },
+      {
+        "nom": "Perle protectrice",
+        "special":" Les dégâts et effets subis par le possesseur de la perle sont divisés par 2 (ou 3 pour les protecteurs). En contrepartie, ses dégâts sont baissés de 25%. Donne le titre de 'Aura malicieuse'.",
+        "type":"Semi-Légendaire"
+      },
+      {
+        "nom": "Pierre d'âme noire",
+        "special":"Permet de capturer une à trois âmes d’un ennemi (n'importe lequel, joueur y compris tant que sa vie ne dépasse pas 1500) afin d’en ré-invoquer une copie parfaite en tant qu’allié au combat (bonus compris). Il faut vaincre la créature pour pouvoir capturer son âme. De plus, le porteur peut changer d'âme tous les trois combats. Enfin, si le porteur de la pierre est tué, la créature disparaît également. Donne le titre de 'Moissonneur/se spirituel(le)'.",
+        "type":"Semi-Légendaire"
+      },
+      {
+        "nom": "Coeur du magma",
+        "special":"Inflige 25xniveau du porteur de dégâts par tour à tous les adversaires. Donne le titre de 'Incinérateur/trice'.",
+        "type":"Semi-Légendaire"
+      },
+      {
+        "nom": "Dé du Destin",
+        "special":" A chaque tentative d'attaque, vous lancez un dé supplémentaire. Vous choisissez la face qui vous convient le plus (donc si vous lancez deux dés, seul un des deux dés est pris en compte). En cas de rapidité, vous lancez quatre dés, et en choisissez deux. Donne le titre de 'Tricheur/cheuse'.",
+        "type":"Semi-Légendaire"
+      },
+      {
+        "nom": "Lampe du désert",
+        "special":"Vous pouvez activer un pouvoir par tour en même temps que votre attaque. Vous pouvez activer jusqu'à trois souhaits par combat parmi les cinq ci-dessous (non-répétable dans un même combat). Donne le titre de 'Génie de la lampe'. SOUHAITS : Génie, donne-moi l’avantage : Vous attaquerez en premier au prochain tour, quelle que soit la vitesse adverse. / Génie, donne-moi la force : Vous taperez 33% plus fort au prochain tour. / Génie, guéris-moi : Vous regagnez 33% de vitalité. / Génie, apporte-moi la richesse : Votre butin, votre expérience et vos pièces d’or seront doublés en cas de victoire pour vous et tous vos alliés. / Génie, protège-moi : Si la prochaine attaque doit vous tuer, vous êtes protégé et ne perdez rien. Néanmoins, les autres attaques du tour peuvent vous achever.",
+        "type":"Semi-Légendaire"
+      },
+      {
+        "nom": "L'Oliphant majestueux de Zéfiriel",
+        "special":" En combat : Au début du combat, la plus puissante créature (basé sur la vitalité - hors humanoïdes, Boss et Archi-boss) du bestiaire de zone dans laquelle se trouve le propriétaire de l'Oliphant rejoint le combat à ses côtés. Elle disparaît si le porteur est mis K.O. [Imblocable] / En RP : N'a pas besoin d'autorisation pour agir contre une 'espèce protégée'. A les faveurs du souverain des Elfes actuel s'il le croise. Donne le titre de 'Faveur des Elfes'.",
+        "type":"Semi-Légendaire"
+      },
+      {
+        "nom": "La Corde éternelle d'Aorik Hache-de-guerre",
+        "special":" En combat : Chaque tour, le propriétaire choisit jusqu'à deux adversaires (hors Archi-Boss) qu'il entrave de sa Corde éternelle. Les 'entravés' doivent alors faire un Coup Réussi ou un Coup Critique pour pouvoir ré-attaquer à nouveau (l'attaque de déblocage ne faisant aucun dégât, ils peuvent encore utiliser des objets). Il peut ré-entraver une même cible tous les deux tours.  [Imblocable] / En RP : Le propriétaire n'a plus besoin de lasso pour effectuer une capture. A les faveurs du souverain des Nains actuel s'il le croise. Donne le titre de 'Faveur des Nains'.",
+        "type":"Semi-Légendaire"
+      },
+      {
+        "nom": "La Torche inconsumable de Brendan Ier",
+        "special":" En combat : Chaque tour, en plus de son attaque, le propriétaire lance le 'dé - blessure' sur l'adversaire de son choix. L'adversaire est alors affublé d'une blessure aléatoire pendant le combat, qui disparaît néanmoins par la suite. De plus, le propriétaire gagne 10%/stats/tour. [Imblocable] / En RP : Le propriétaire a le don de clairvoyance et sait quel chemin emprunter dans les donjons. A les faveurs du souverain des Humains actuel s'il le croise. Donne le titre de 'Faveur des Hommes'.  Certaines blessures sont adaptées contre les créatures, la jambe mutilée par exemple fait perdre 25% de vitesse.",
+        "type":"Semi-Légendaire"
+      }
+    ]
   }
 }

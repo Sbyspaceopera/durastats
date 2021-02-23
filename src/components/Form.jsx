@@ -15,7 +15,8 @@ import {
   toggleArmure,
   toggleCasque,
   toggleBottes,
-  disarmed
+  disarmed,
+  toggleArtefact
 } from "../actions";
 
 import Race from './formComponents/Race'
@@ -25,7 +26,7 @@ import Armes from './formComponents/Armes'
 import Armure from './formComponents/Armure'
 import SimpleArrayItems from "./formComponents/SimpleArrayItems"
 const Form = (props) => {
-  const { race, level, classe, setTotal, totaux, armes, toggleWeapon, disarmed, toggleRace, toggleClasse, toggleSlots, toggleLevel, armure, toggleArmure, casque, toggleCasque,bottes,toggleBottes } = props;
+  const { artefact,race, level, classe, setTotal, totaux, armes, toggleWeapon, disarmed, toggleRace, toggleClasse, toggleSlots, toggleLevel, armure, toggleArmure, casque, toggleCasque,bottes,toggleBottes, toggleArtefact } = props;
   const weaponsArray =
     datas.equipements.armesBases.map((data) =>
       Object.entries(data).map((weaponsOrOptGroup) => weaponsOrOptGroup)
@@ -57,6 +58,7 @@ const Form = (props) => {
           <Armure armure={armure} toggleArmure={toggleArmure} datas={datas.equipements.armuresBases} />
           <SimpleArrayItems label="Casque" item={casque} toggleItem={toggleCasque} datas={datas.equipements.casquesBases} />
           <SimpleArrayItems label="Bottes" item={bottes} toggleItem={toggleBottes} datas={datas.equipements.bottesBases} />
+          <SimpleArrayItems label="Artefact" noDataAfterName={true} item={artefact} toggleItem={toggleArtefact} datas={datas.equipements.artefacts} />
         </React.Fragment>
       ) : null}
     </Container>
@@ -72,7 +74,8 @@ const mapStateToProps = (state) => {
     armes: state.armes,
     armure: state.armure,
     casque: state.casque,
-    bottes: state.bottes
+    bottes: state.bottes,
+    artefact: state.artefact
   };
 };
 
@@ -86,5 +89,6 @@ export default connect(mapStateToProps, {
   toggleArmure,
   toggleCasque,
   toggleBottes,
+  toggleArtefact,
   disarmed
 })(Form);

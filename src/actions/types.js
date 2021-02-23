@@ -7,5 +7,6 @@ export const TOGGLE_ARMURE = "TOGGLE_ARMURE"
 export const DISARMED = "DISARMED"
 export const TOGGLE_CASQUE = "TOGGLE_CASQUE"
 export const TOGGLE_BOTTES = "TOGGLE_BOTTES"
+export const TOGGLE_ARTEFACT = "TOGGLE_ARTEFACT"
 
 export const SET_TOTAL= "SET_TOTAL"

@@ -29,25 +29,21 @@ const Header =()=> {
                 </Grid>
             </AppBar>
 
-            <Container style={{backgroundColor: theme.palette.background.paper, width: "55%"}}>
-                
+            {/*<Container style={{backgroundColor: theme.palette.background.paper, width: "55%"}}>
                 <Card>
                     <CardContent>
                         <Typography variant="h6" style={theme.palette.blanc}>
                             A venir
                         </Typography>
-                    
                         <ul>
                             <li>Classes furtives</li>
                             <li>Montures/Familiers/Compagnons</li>
                             <li>Artefacts</li>
                             <li>Mise en forme</li>
                         </ul>
-                        </CardContent>
-                                
+                        </CardContent>    
                 </Card>
-                
-            </Container>
+    </Container>*/}
         </header>
     )
 }

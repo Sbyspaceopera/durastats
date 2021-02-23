@@ -8,6 +8,7 @@ import {
     TOGGLE_ARMURE,
     TOGGLE_CASQUE,
     TOGGLE_BOTTES,
+    TOGGLE_ARTEFACT,
     DISARMED
 } from "./types"
 
@@ -71,6 +72,13 @@ export const toggleBottes = (bottes) => {
     return {
         type:TOGGLE_BOTTES,
         payload: bottes
+    }
+}
+
+export const toggleArtefact = (artefact) => {
+    return {
+        type: TOGGLE_ARTEFACT,
+        payload: artefact
     }
 }
 
