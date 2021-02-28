@@ -21,6 +21,7 @@ const raceReducer = (state = INITIAL_STATE, action) =>{
                  description: action.payload.description,
                  nom: action.payload.nom,
                  des: action.payload.des,
+                 special: (action.payload.special ? action.payload.special : false)
                 }
         default:
             return state;

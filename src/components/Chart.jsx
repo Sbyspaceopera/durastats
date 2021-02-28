@@ -40,7 +40,7 @@ const Chart = (props) => {
       }
 
     return(
-        <Container maxWidth='md'>
+        <Container width="100%">
             <Bar data={data} options={options}/>
         </Container>
         

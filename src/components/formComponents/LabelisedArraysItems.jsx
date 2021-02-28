@@ -1,3 +1,5 @@
+//TODO Redéfinir les termes pour qu'ils deviennent générique à l'instar de SimpleArrayItems.jsx
+
 import React from 'react'
 import { useTheme } from '@material-ui/core/styles';
 import {
@@ -8,7 +10,7 @@ import {
   } from "@material-ui/core";
 
 const Armure = (props) => {
-    const {armure, toggleArmure, datas} = props
+    const {armure, toggleArmure, datas, label} = props
     const jsonToArray = datas.map((data) => {
         return Object.entries(data);
     });
@@ -69,9 +71,9 @@ const Armure = (props) => {
 
     return (
         <FormControl>
-            <InputLabel id="armure">Armures</InputLabel>
+            <InputLabel id={label}>{label}</InputLabel>
             <Select native onChange={(event) => handleArmure(event)}
-            id="armure"
+            id={label}
             value={armure.nom? armure.nom : "disarmed"}
             style={styleCondition(armure)}
             >
@@ -80,7 +82,7 @@ const Armure = (props) => {
                 </option>
                 {renderArmures(datas)}
             </Select>
-            <FormHelperText>{armure.special ? `Effet spécial : ${armure.special}` : `Effet spécial : /` }</FormHelperText>
+            <FormHelperText>{armure.special ? `Effet spécial : ${armure.special}` : "" }</FormHelperText>
         </FormControl>
     )
 }

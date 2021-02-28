@@ -27,6 +27,7 @@ const totalReducer = (state= INITIAL_STATE, action) =>{
                     + (action.payload.armure ? (action.payload.armure.vitalite ? parseInt(action.payload.armure.vitalite) : 0) : 0 )
                     + (action.payload.casque ? (action.payload.casque.vitalite ? parseInt(action.payload.casque.vitalite) : 0) : 0 )
                     + (action.payload.bottes ? (action.payload.bottes.vitalite ? parseInt(action.payload.bottes.vitalite) : 0) : 0 )
+                    + (action.payload.monturesEtc ? (action.payload.monturesEtc.vitalite ? parseInt(action.payload.monturesEtc.vitalite) : 0) : 0 )
                     ,
                 vitesse: action.payload.race.vitesse 
                     + (action.payload.classe.nom ? action.payload.classe.stats.vitesse*action.payload.level-5 : 0)
@@ -37,6 +38,7 @@ const totalReducer = (state= INITIAL_STATE, action) =>{
                     + (action.payload.armure ? (action.payload.armure.vitesse ? parseInt(action.payload.armure.vitesse) : 0) : 0 )
                     + (action.payload.casque ? (action.payload.casque.vitesse ? parseInt(action.payload.casque.vitesse) : 0) : 0 )
                     + (action.payload.bottes ? (action.payload.bottes.vitesse ? parseInt(action.payload.bottes.vitesse) : 0) : 0 )
+                    + (action.payload.monturesEtc ? (action.payload.monturesEtc.vitesse ? parseInt(action.payload.monturesEtc.vitesse) : 0) : 0 )
                     ,
                 degats: action.payload.race.degats 
                     + (action.payload.classe.nom ? action.payload.classe.stats.degats*action.payload.level-5 : 0)
@@ -47,6 +49,7 @@ const totalReducer = (state= INITIAL_STATE, action) =>{
                     + (action.payload.armure ? (action.payload.armure.degats ? parseInt(action.payload.armure.degats) : 0) : 0 )
                     + (action.payload.casque ? (action.payload.casque.degats ? parseInt(action.payload.casque.degats) : 0) : 0 )
                     + (action.payload.bottes ? (action.payload.bottes.degats ? parseInt(action.payload.bottes.degats) : 0) : 0 )
+                    + (action.payload.monturesEtc ? (action.payload.monturesEtc.degats ? parseInt(action.payload.monturesEtc.degats) : 0) : 0 )
                     ,
                 slots : action.payload.armes.length ?
                         action.payload.armes.map(arme => {
@@ -60,6 +63,7 @@ const totalReducer = (state= INITIAL_STATE, action) =>{
                 + (action.payload.armure ? (action.payload.armure.prix ? parseInt(action.payload.armure.prix) : 0) : 0 )
                 + (action.payload.casque ? (action.payload.casque.prix ? parseInt(action.payload.casque.prix) : 0) : 0 )
                 + (action.payload.bottes ? (action.payload.bottes.prix ? parseInt(action.payload.bottes.prix) : 0) : 0 )
+                + (action.payload.monturesEtc ? (action.payload.monturesEtc.prix ? parseInt(action.payload.monturesEtc.prix) : 0) : 0 )
             }
 
         default:

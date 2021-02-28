@@ -64,7 +64,7 @@ const SimpleArrayItems = (props) =>{
                 </option>
                 {renderItems(datas)}
             </Select>
-            <FormHelperText>{item.special ? `Effet spécial : ${item.special}` : `Effet spécial : /` }</FormHelperText>
+            <FormHelperText>{item.special ? `Effet spécial : ${item.special}` : "" }</FormHelperText>
         </FormControl>
     )
 }
