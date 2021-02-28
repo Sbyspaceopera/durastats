@@ -39,7 +39,7 @@ const Race = (props) => {
             >
             {renderRace(datas.races)}
             </Select>
-            <FormHelperText>{race.special ? `Effet spécial : ${race.special}` : `Effet spécial : /` }</FormHelperText>
+            <FormHelperText>{race.special ? `Effet spécial : ${race.special}` : ""}</FormHelperText>
       </FormControl>
     )
 }

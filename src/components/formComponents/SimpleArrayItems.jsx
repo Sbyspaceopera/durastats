@@ -8,7 +8,7 @@ import {
   } from "@material-ui/core";
 
 const SimpleArrayItems = (props) =>{
-    const {datas, item, toggleItem, label} = props
+    const {datas, item, toggleItem, label, noDataAfterName} = props
     const theme = useTheme()
 
 
@@ -30,7 +30,7 @@ const SimpleArrayItems = (props) =>{
             return <option key={item.nom} value={item.nom}
             style={styleCondition(item)}
             >
-                {`${item.nom} => ${item.degats ? "Dégats:" + item.degats + "; " : ""}${item.vitalite ? "Vitalité:" + item.vitalite + "; " : ""}${item.vitesse ? "Vitesse:" + item.vitesse + "; " : ""}${item.prix ? "Prix:" + item.prix + "po;" : ""}`}
+                {`${item.nom} ${noDataAfterName ? "" : "=>"} ${item.degats ? "Dégats:" + item.degats + "; " : ""}${item.vitalite ? "Vitalité:" + item.vitalite + "; " : ""}${item.vitesse ? "Vitesse:" + item.vitesse + "; " : ""}${item.prix ? "Prix:" + item.prix + "po;" : ""}`}
             </option>
         })
     }
@@ -64,7 +64,7 @@ const SimpleArrayItems = (props) =>{
                 </option>
                 {renderItems(datas)}
             </Select>
-            <FormHelperText>{item.special ? `Effet spécial : ${item.special}` : `Effet spécial : /` }</FormHelperText>
+            <FormHelperText>{item.special ? `Effet spécial : ${item.special}` : "" }</FormHelperText>
         </FormControl>
     )
 }

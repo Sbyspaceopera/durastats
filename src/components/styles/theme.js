@@ -49,6 +49,7 @@ const theme = createMuiTheme({
         "Stryge Noir" : {color: "#3D3D3D"},
         Vampire: {color: "#A10000"},
         "Semi-Légendaire" : {color: "#DAA500"},
+        semiLegendaire: {color: "#DAA500"},
         "Exotique" : {color: "#0FF"},
         blanc: {color: "#fff"},
         couleurText: {color:"#DBCCA8"},

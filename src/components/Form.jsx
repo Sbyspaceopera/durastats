@@ -15,17 +15,19 @@ import {
   toggleArmure,
   toggleCasque,
   toggleBottes,
-  disarmed
+  disarmed,
+  toggleMonturesEtc,
+  toggleArtefact
 } from "../actions";
 
 import Race from './formComponents/Race'
 import Classe from './formComponents/Classe'
 import Niveaux from './formComponents/Niveaux'
 import Armes from './formComponents/Armes'
-import Armure from './formComponents/Armure'
+import LabelisedArraysItems from './formComponents/LabelisedArraysItems'
 import SimpleArrayItems from "./formComponents/SimpleArrayItems"
 const Form = (props) => {
-  const { race, level, classe, setTotal, totaux, armes, toggleWeapon, disarmed, toggleRace, toggleClasse, toggleSlots, toggleLevel, armure, toggleArmure, casque, toggleCasque,bottes,toggleBottes } = props;
+  const { monturesEtc, toggleMonturesEtc, artefact,race, level, classe, setTotal, totaux, armes, toggleWeapon, disarmed, toggleRace, toggleClasse, toggleSlots, toggleLevel, armure, toggleArmure, casque, toggleCasque,bottes,toggleBottes, toggleArtefact } = props;
   const weaponsArray =
     datas.equipements.armesBases.map((data) =>
       Object.entries(data).map((weaponsOrOptGroup) => weaponsOrOptGroup)
@@ -34,7 +36,7 @@ const Form = (props) => {
 
   useEffect(() => {
     setTotal();
-  }, [race, level, classe, setTotal, armes, totaux.slots, armure,casque, bottes]);
+  }, [race, level, classe, setTotal, armes, totaux.slots, armure,casque, bottes,  monturesEtc]);
 
   const renderOptions = (datas) => {
     return datas.map((data) => {
@@ -54,9 +56,11 @@ const Form = (props) => {
         <React.Fragment>
           <Niveaux level={level} toggleLevel={toggleLevel} />
           <Armes classe={classe} datas={datas.equipements.armesBases} totaux={totaux} armes={armes} weaponsArray={weaponsArray} disarmed={disarmed} toggleWeapon={toggleWeapon}/>
-          <Armure armure={armure} toggleArmure={toggleArmure} datas={datas.equipements.armuresBases} />
+          <LabelisedArraysItems armure={armure} toggleArmure={toggleArmure} datas={datas.equipements.armuresBases} label="Armures"/>
+          <LabelisedArraysItems armure={monturesEtc} toggleArmure={toggleMonturesEtc} datas={datas.equipements.monturesEtc} label="Montures/Familiers/Compagnon" />
           <SimpleArrayItems label="Casque" item={casque} toggleItem={toggleCasque} datas={datas.equipements.casquesBases} />
           <SimpleArrayItems label="Bottes" item={bottes} toggleItem={toggleBottes} datas={datas.equipements.bottesBases} />
+          <SimpleArrayItems label="Artefact" noDataAfterName={true} item={artefact} toggleItem={toggleArtefact} datas={datas.equipements.artefacts} />
         </React.Fragment>
       ) : null}
     </Container>
@@ -72,7 +76,9 @@ const mapStateToProps = (state) => {
     armes: state.armes,
     armure: state.armure,
     casque: state.casque,
-    bottes: state.bottes
+    bottes: state.bottes,
+    artefact: state.artefact,
+    monturesEtc: state.monturesEtc
   };
 };
 
@@ -86,5 +92,7 @@ export default connect(mapStateToProps, {
   toggleArmure,
   toggleCasque,
   toggleBottes,
+  toggleArtefact,
+  toggleMonturesEtc,
   disarmed
 })(Form);

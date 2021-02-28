@@ -7,6 +7,8 @@ import weaponsReducer from './weaponsReducer'
 import armureReducer from './armureReducer'
 import casqueReducer from './casqueReducer'
 import bottesReducer from './bottesReducer'
+import artefactReducer from './artefactReducer'
+import monturesEtcReducer from "./monturesEtc"
 
 
 export default combineReducers({
@@ -17,5 +19,7 @@ export default combineReducers({
     armes: weaponsReducer,
     armure: armureReducer,
     casque: casqueReducer,
-    bottes: bottesReducer
+    bottes: bottesReducer,
+    artefact : artefactReducer,
+    monturesEtc: monturesEtcReducer
 })

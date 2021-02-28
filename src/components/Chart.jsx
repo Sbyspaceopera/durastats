@@ -5,7 +5,7 @@ import {Container} from '@material-ui/core'
 
 const Chart = (props) => {
     const {totaux} = props
-
+  
     const data = {
         labels: [`Vitalité : ${totaux.vitalite}`, `Vitesse : ${totaux.vitesse}`, `Dégats : ${totaux.degats}`],
         datasets: [
@@ -40,7 +40,7 @@ const Chart = (props) => {
       }
 
     return(
-        <Container maxWidth='md'>
+        <Container width="100%">
             <Bar data={data} options={options}/>
         </Container>
         

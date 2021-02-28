@@ -18,7 +18,7 @@ const Niveaux = (props) =>{
         } else {
           toggleLevel(debouncedLevel);
         }
-      }, 2000);
+      }, 800);
       return () => {
         clearTimeout(timeOutLevel)
       }

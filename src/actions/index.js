@@ -8,6 +8,8 @@ import {
     TOGGLE_ARMURE,
     TOGGLE_CASQUE,
     TOGGLE_BOTTES,
+    TOGGLE_ARTEFACT,
+    TOGGLE_MONTURESETC,
     DISARMED
 } from "./types"
 
@@ -73,6 +75,20 @@ export const toggleBottes = (bottes) => {
         payload: bottes
     }
 }
+
+export const toggleArtefact = (artefact) => {
+    return {
+        type: TOGGLE_ARTEFACT,
+        payload: artefact
+    }
+}
+
+export const toggleMonturesEtc = (monturesEtc) => {
+    return {
+        type: TOGGLE_MONTURESETC,
+        payload: monturesEtc
+    }
+} 
 
 export const setTotal = () => (dispatch, getState) => {
     const states= getState()
