@@ -6,7 +6,6 @@ import {
     AppBar,
     Modal,
     Grid,
-    Paper,
     Box
 } from '@material-ui/core';
 import { useTheme } from '@material-ui/core/styles';
