@@ -1,5 +1,3 @@
-//TODO Utilisation du grid classique et pas celui tout naze de material ui
-
 import React from 'react'
 import { 
     Typography, 
@@ -18,7 +16,7 @@ const Header =()=> {
 
 
     const body = (
-        <Box height="70%" width="60%" position="absolute" top={window.innerHeight/6 + "px"} left={window.innerWidth/5} overflow="auto" style={{backgroundColor:"black", "&:hover" : {pointer:"cursor"}, padding:"2em"}}>
+        <Box width="60%" position="absolute" top={window.innerHeight/6 + "px"} left={window.innerWidth/5} overflow="auto" style={{backgroundColor:"black", "&:hover" : {pointer:"cursor"}, padding:"2em"}}>
           <Typography variant="h3" style={{...theme.palette.blanc, textAlign:'center'}} >Informations</Typography>
           <ol>
               <li>
@@ -51,9 +49,9 @@ const Header =()=> {
 
 
     return (
-        <header>
-            <AppBar position="static" elevation={30} sx={{borderBottom:1, borderColor: theme.palette.text.primary}} style={{boxShadow:"inset 0 -4px 5px -4px #422a12", height:"8vh"}}>
-                <Grid container justify="center" alignItems="flex-end" height="100%">
+        
+            <AppBar position="static" sx={{borderBottom:1, borderColor: theme.palette.text.primary}} style={{boxShadow:"inset 0 -4px 5px -4px #422a12", height:"8vh", backgroundImage:"url('https://i.ibb.co/Rp7B0Xy/navbar-texture.jpg')"}}>
+                <Grid container justify="center" alignItems="flex-end" height="8vh">
                     <Grid height="100%" item>
                         <EqualizerIcon style={{...theme.palette.blanc, fontSize : 50}} />
                     </Grid>
@@ -75,7 +73,6 @@ const Header =()=> {
                     </Grid>
                 </Grid>
             </AppBar>
-        </header>
     )
 }
 

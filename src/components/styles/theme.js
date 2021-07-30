@@ -1,5 +1,6 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 import bodyBackgroundImg from '../../img/bodyBackgroundImg.jpg'
+import headerBackgroundImg from '../../img/navbar-texture.jpg'
 
 const theme = createMuiTheme({
     palette: {
@@ -13,7 +14,7 @@ const theme = createMuiTheme({
         },
         primary: {
             light: "#4A4A4A",
-            main: "#1A1209",
+            main: "#DBCCA8",
             dark: "#303f9f",
             contrastText: "#DBCCA8"
         },
@@ -70,6 +71,9 @@ const theme = createMuiTheme({
               backgroundReapeatY:"repeat",
               backgroundSize:'cover',
               backgroundPosition:"center",
+            },
+            header: {
+                backgroundImage: `url(${headerBackgroundImg})`
             }
           },
         }

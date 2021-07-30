@@ -15,7 +15,7 @@ const totalReducer = (state= INITIAL_STATE, action) =>{
             return {
                 ...state, 
                 vitalite: action.payload.race.vitalite 
-                    + (action.payload.classe.nom ? (action.payload.classe.stats.vitalite*action.payload.level-5) + 20 : 0)
+                    + (action.payload.classe.nom ? (action.payload.classe.stats.vitalite*(action.payload.level-4)) + 20 : 0)
                     + ((Math.floor(action.payload.level/10)+1)/2)*(0+(Math.floor(action.payload.level/10)*100))
                     + (action.payload.armes.length ?
                         action.payload.armes.map(arme => {
@@ -27,7 +27,7 @@ const totalReducer = (state= INITIAL_STATE, action) =>{
                     + (action.payload.monturesEtc ? (action.payload.monturesEtc.vitalite ? parseInt(action.payload.monturesEtc.vitalite) : 0) : 0 )
                     ,
                 vitesse: action.payload.race.vitesse 
-                    + (action.payload.classe.nom ? action.payload.classe.stats.vitesse*action.payload.level-5 : 0)
+                    + (action.payload.classe.nom ? (action.payload.classe.stats.vitesse*(action.payload.level-4)) + 20 : 0)
                     + (action.payload.armes.length ?
                         action.payload.armes.map(arme => {
                             return arme.arme.vitesse ? parseInt(arme.arme.vitesse,10) :0
@@ -38,7 +38,7 @@ const totalReducer = (state= INITIAL_STATE, action) =>{
                     + (action.payload.monturesEtc ? (action.payload.monturesEtc.vitesse ? parseInt(action.payload.monturesEtc.vitesse) : 0) : 0 )
                     ,
                 degats: action.payload.race.degats 
-                    + (action.payload.classe.nom ? action.payload.classe.stats.degats*action.payload.level-5 : 0)
+                    + (action.payload.classe.nom ? (action.payload.classe.stats.degats*(action.payload.level-4)) + 20  : 0)
                     + (action.payload.armes.length ?
                         action.payload.armes.map(arme => {
                             return arme.arme.degats ? parseInt(arme.arme.degats,10) :0
