@@ -10,7 +10,7 @@ const Chart = (props) => {
         labels: [`Vitalité : ${totaux.vitalite}`, `Vitesse : ${totaux.vitesse}`, `Dégats : ${totaux.degats}`],
         datasets: [
             {
-            label: "",
+            label: "Statistiques",
             data: [totaux.vitalite, totaux.vitesse, totaux.degats],
             backgroundColor: [
                 'rgba(56, 151, 48, 0.2)',
